@@ -15,7 +15,7 @@
     margin: auto;
 }
 .cuerpo{
-    /*height: 600px;*/
+    display: flex;
 }
 body{
     background-repeat: repeat;
@@ -23,7 +23,14 @@ body{
     background-size: 100%;
   }
   .logo{
-    width: 70%;
+    margin: 5px;
+  }
+  #textoLogo{
+    margin: 70px;
+  }
+  legend{
+    
+    font-size: 32px;
   }
   h1{
     font-family: 'Quintessential', cursive;
@@ -36,7 +43,6 @@ body{
   }
   .botones{
     width: 100%;
-    margin-left: 50%;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
@@ -54,4 +60,5 @@ body{
   }
     /*font-family: 'Bona Nova', serif;
 font-family: 'PT Sans Narrow', sans-serif;
-font-family: 'Quintessential', cursive;*/
+font-family: 'Quintessential', cursive;
+font-family: 'Birthstone',/*

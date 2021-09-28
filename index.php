@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=PT+Sans+Narrow&family=Quintessential&display=swap" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+    </style>
     <script type="text/javascript" src="script.js"></script>
     <title>Electro.Web</title>
 </head>
 <body>
     <div class="contenedor">
-        <div class="banner">
-            <img src="/banner.jpg" width="1200" height="200px">
+        <div>
+            <img src="/banner.jpg" width="1000" height="200px">
         </div>
         <div class="botones">
             <h1>Electro.Web</h1>
@@ -25,10 +29,15 @@
         <div class="cuerpo">
             <div class="logo">
                 <img src="/logo.png" width="300" height="300">
-                <h2>Electro.Web es una empresa que <b>importa</b> y <b>distribuye</b> artículos y accesorios para el hogar.<br>
-                Debido al éxito del emprendimiento decidimos brindar un sitio Web para que nuestros clientes puedan consultar los 
-                productos que tenemos actualmente.
-                </h2>
+            </div>
+            <div id="textoLogo">
+                <fieldset>
+                    <legend>Porque nos importas</legend>
+                    <h2>Electro.Web es una empresa que <b>importa</b> y <b>distribuye</b> artículos y accesorios para el hogar.<br>
+                    Debido al éxito del emprendimiento decidimos brindar un sitio Web para que nuestros clientes puedan consultar los 
+                    productos que tenemos actualmente.
+                    </h2>
+                </fieldset>
             </div>
         </div>
 
