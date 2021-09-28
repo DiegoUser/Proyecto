@@ -5,27 +5,27 @@
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#contenedor{
+.contenedor{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     width: 1000px;
 }
-#banner{
+.banner{
     width: 70%;
 }
-#cuerpo{
+.cuerpo{
     height: 600px;
+    width: 70%;
 }
 body{
     background-repeat: repeat;
     background-image: url(/mosaico.gif);
     background-size: 100%;
   }
-  #logo{
-       display: flex;
-       text-align: right;
+  .logo{
+    
   }
   h1{
     font-family: 'Quintessential', cursive;
