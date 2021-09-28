@@ -26,6 +26,12 @@ body{
   h1{
     font-family: 'Quintessential', cursive;
   }
+  h2{
+    font-family: 'Bona Nova', serif;
+  }
+  h3{
+    font-family: 'PT Sans Narrow', sans-serif
+  }
   .botones{
     width: 70%;
     margin-left: 15%;
