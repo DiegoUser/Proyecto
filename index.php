@@ -9,19 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=PT+Sans+Narrow&family=Quintessential&display=swap" rel="stylesheet">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
-    </style>
     <script type="text/javascript" src="script.js"></script>
     <title>Electro.Web</title>
 </head>
 <body>
     <div class="contenedor">
-        <div>
-            <img src="/banner.jpg" width="1000" height="200px">
-        </div>
         <div class="botones">
-            <h1>Electro.Web</h1>
             <button type="button">Inicio</button>
             <button type="button">Catálogo</button>
             <button type="button">Consultas</button>
