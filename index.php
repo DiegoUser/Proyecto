@@ -14,7 +14,7 @@
 <body>
     <div class="contenedor">
         <div class="banner">
-            <img src="/banner.jpg" width="1120px" height="200px">
+            <img src="/banner.jpg" width="1200" height="200px">
         </div>
         <div class="botones">
             <h1>Electro.Web</h1>
