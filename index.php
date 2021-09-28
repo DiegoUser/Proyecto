@@ -25,7 +25,12 @@
         <div class="cuerpo">
             <div class="logo">
                 <img src="/logo.png" width="300" height="300">
-                <h2>Hola amigos mios</h2>
+                <h2>Electro.Web es una empresa que <b>importa</b> y <b>distribuye</b> artículos y accesorios para el hogar.<br>
+                Debido al éxito del emprendimiento decidimos brindar un sitio Web para que nuestros clientes puedan consultar los 
+                productos que tenemos actualmente.
+
+
+                </h2>
             </div>
         </div>
 

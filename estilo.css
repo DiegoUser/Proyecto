@@ -19,13 +19,13 @@
     height: 600px;
 }
 body{
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-image: url(/mosaico.gif);
     background-size: 100%;
   }
   #logo{
        display: flex;
-       
+       text-align: right;
   }
   h1{
     font-family: 'Quintessential', cursive;
