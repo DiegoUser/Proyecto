@@ -23,7 +23,10 @@
             <button type="button">Consultas</button>
         </div>
         <div class="cuerpo">
-        <h3>hola3</h3>
+            <div class="logo">
+                <img src="/logo.png" width="300" height="300">
+                <h2>Hola amigos mios</h2>
+            </div>
         </div>
 
 

@@ -23,6 +23,10 @@ body{
     background-image: url(/mosaico.gif);
     background-size: 100%;
   }
+  #logo{
+       display: flex;
+       
+  }
   h1{
     font-family: 'Quintessential', cursive;
   }
