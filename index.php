@@ -14,10 +14,13 @@
 <body>
     <div class="contenedor">
         <div class="banner">
-            <h1>hola<h1>
+            <img src="/banner.jpg" width="1120px" height="200px">
         </div>
         <div class="botones">
-        <h2>hola2<h2>
+            <h1>Electro.Web</h1>
+            <button type="button">Inicio</button>
+            <button type="button">Catálogo</button>
+            <button type="button">Consultas</button>
         </div>
         <div class="cuerpo">
         <h3>hola3</h3>
