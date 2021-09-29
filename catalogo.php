@@ -15,7 +15,7 @@
 <body>
     <div class="contenedor">
         <?php include "botones.inc" ?>
-        <div class="cuerpo">
+        <div class="cuerpoCatalogo">
             <form id="dataFRM" action="ProcesoInsertar.php" method="POST">
                 <table id="tablaFRM">
                     <tr>
@@ -58,8 +58,12 @@
                             title="Máximo 10 carácteres" />
                         </td>
                     </tr>
-
-
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="Insertar" onclick="CheckForm();"/>
+                            <input type="reset" value="Cancelar" />
+                        </td>
+                    </tr>
                 </table>
             </form>
         </div>
