@@ -1,5 +1,5 @@
 <div class="botones">
-            <button type="button">Inicio</button>
-            <button type="button">Catálogo</button>
-            <button type="button">Consultas</button>
+            <button type="button" onclick="window.location.href='index.php'">Inicio</button>
+            <button type="button" onclick="window.location.href='catalogo.php'">Catálogo</button>
+            <button type="button" onclick="window.location.href='consultas.php'">Consultas</button>
 </div>
