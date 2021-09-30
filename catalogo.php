@@ -16,6 +16,11 @@
     <div class="contenedor">
         <?php include "botones.inc" ?>
         <div class="cuerpoCatalogo">
+            <div>
+                <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoInsertar.php'">Insertar</button>
+                <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoEliminar.php'">Eliminar</button>
+                <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoModificar.php'">Modificar</button>
+            </div>
             <form id="dataFRM" action="ProcesoInsertar.php" method="POST">
                 <table id="tablaFRM">
                     <tr>
@@ -28,7 +33,7 @@
                             title="Máximo 10 carácteres" />
                         </td>
                     </tr>
-                    <tr>
+                    <tr>    
                     <td><h4>Origen:</h4></td>
                         <td>
                             <input id="dataORG"
@@ -59,9 +64,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            <input type="button" value="Insertar" onclick="CheckForm();"/>
-                            <input type="reset" value="Cancelar" />
+                        <td id="botonesformulario" colspan="2">
+                            <input type="button" class="BotonesAcciones" value="Insertar" onclick="CheckForm();"/>
+                            <input type="reset" class="BotonesAcciones" value="Cancelar" />
                         </td>
                     </tr>
                 </table>
