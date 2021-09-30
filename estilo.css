@@ -13,6 +13,7 @@
     width: 1000px;
     margin: auto;
 }
+/*Cuerpo Index*/
 .cuerpo{
     display: flex;
 }
@@ -24,10 +25,12 @@ body{
     background-image: url(/mosaico.gif);
     background-size: 100%;
   }
+  /*Logo Index*/
   .logo{
     margin-top: 2.5%;
     margin-left: 5%;
   }
+  /*Texto Index*/
   #textoLogo{
     margin: 70px;
   }
@@ -49,6 +52,7 @@ body{
     font-family: 'Scheherazade New', serif;
     text-align: justify;
   }
+  /*Botones de Menú Principal*/
   .botones{
     width: 100%;
     background: rgba( 255, 255, 255, 0.25 );
@@ -77,6 +81,7 @@ body{
     border-radius: 10px;
     padding: 2px;
   }
+  /*Botones para Insertar, Eliminar y Modificar*/
   .BotonesAcciones{
     padding: 5px;
     background: burlywood;
@@ -89,6 +94,10 @@ body{
   /*Botones de enviar y cancelar*/
   #botonesformulario{
     text-align: right;
+  }
+  .BotonesFormulario{
+    background: burlywood;
+    padding: 5px;
   }
   /*Fuentes
 font-family: 'Bona Nova', serif;
