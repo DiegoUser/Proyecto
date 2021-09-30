@@ -85,11 +85,11 @@ body{
   }
   /*Botones para Insertar, Eliminar y Modificar*/
   .BotonesAcciones{
-    width: 70px;
     background: tomato;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 18px;
+    font-family: 'Scheherazade New', serif;
   }
     /*Botones para Insertar, Eliminar y Modificar*/
   #BotonesAcciones{
