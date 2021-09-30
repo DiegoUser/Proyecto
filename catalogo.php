@@ -16,7 +16,7 @@
     <div class="contenedor">
         <?php include "botones.inc" ?>
         <div class="cuerpoCatalogo">
-            <div>
+            <div id="BotonesAcciones">
                 <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoInsertar.php'">Insertar</button>
                 <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoEliminar.php'">Eliminar</button>
                 <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoModificar.php'">Modificar</button>

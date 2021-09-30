@@ -18,7 +18,7 @@
     display: flex;
 }
 .cuerpoCatalogo{
-  display: flex;
+  width: 100%;
 }
 body{
     background-repeat: repeat;
@@ -58,7 +58,6 @@ body{
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 ); 
     text-align: center; 
@@ -86,6 +85,16 @@ body{
     padding: 5px;
     background: burlywood;
   }
+    /*Botones para Insertar, Eliminar y Modificar*/
+  #BotonesAcciones{
+    width: 50%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    text-align: center; 
+  }
   input{
     border-radius: 10px;
     font-size: 15px;
@@ -99,6 +108,7 @@ body{
   .BotonesFormulario{
     background: burlywood;
     padding: 5px;
+    cursor: pointer;
   }
   /*Fuentes
 font-family: 'Bona Nova', serif;
