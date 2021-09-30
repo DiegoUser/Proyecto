@@ -85,8 +85,11 @@ body{
   }
   /*Botones para Insertar, Eliminar y Modificar*/
   .BotonesAcciones{
-    padding: 5px;
+    width: 70px;
     background: tomato;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
   }
     /*Botones para Insertar, Eliminar y Modificar*/
   #BotonesAcciones{
