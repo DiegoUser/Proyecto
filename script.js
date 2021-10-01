@@ -3,9 +3,9 @@ function CheckForm() {
     var mensaje = "ATENCION!!!... Ingrese:\n";
     var error   = false;
     // capturar datos del formulario
-    var descripcion = document.getElementById("dataNOM").value;
-    var origen      = document.getElementById("dataDIR").value;
-    var precio      = document.getElementById("dataDTO").value;
+    var descripcion = document.getElementById("dataDES").value;
+    var origen      = document.getElementById("dataORG").value;
+    var precio      = document.getElementById("dataPRC").value;
     // validar datos
     if (descripcion =="") {
         error   = true;

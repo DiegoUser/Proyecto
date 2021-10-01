@@ -17,11 +17,11 @@
         <?php include "botones.inc" ?>
         <div class="cuerpoCatalogo">
             <div id="BotonesAcciones">
-                <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoInsertar.php'">Insertar</button>
-                <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoEliminar.php'">Eliminar</button>
-                <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoModificar.php'">Modificar</button>
+                <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoINS.php'">Insertar</button>
+                <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoDEL.php'">Eliminar</button>
+                <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoMOD.php'">Modificar</button>
             </div>
-            <form id="dataFRM" action="ProcesoInsertar.php" method="POST">
+            <form id="dataFRM" action="ProcesoINS.php" method="POST">
                 <table id="tablaFRM">
                     <tr>
                         <td><h4>ID:</h4></td>
@@ -29,16 +29,6 @@
                             <input id="dataID"
                             type="text"
                             name="ID"
-                            maxlenght="10"
-                            title="Máximo 10 carácteres" />
-                        </td>
-                    </tr>
-                    <tr>    
-                    <td><h4>Origen:</h4></td>
-                        <td>
-                            <input id="dataORG"
-                            type="text"
-                            name="ORIGEN"
                             maxlenght="10"
                             title="Máximo 10 carácteres" />
                         </td>
@@ -51,6 +41,16 @@
                             name="DESCRIPCION"
                             maxlenght="50"
                             title="Máximo 50 carácteres" />
+                        </td>
+                    </tr>
+                    <tr>    
+                    <td><h4>Origen:</h4></td>
+                        <td>
+                            <input id="dataORG"
+                            type="text"
+                            name="ORIGEN"
+                            maxlenght="10"
+                            title="Máximo 10 carácteres" />
                         </td>
                     </tr>
                     <tr>
