@@ -39,7 +39,6 @@ mysqli_close($conex);
 </head>
 
 <body>
-    <div class="contenedor">
     <?php include "botones.inc" ?>
     <div id="contenido">
         <fieldset id="fldFRM">
