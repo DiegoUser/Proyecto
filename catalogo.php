@@ -23,40 +23,43 @@
                 <button type="button" class="BotonesAcciones" onclick="window.location.href='FormDEL.php'">Eliminar</button>
                 <button type="button" class="BotonesAcciones" onclick="window.location.href='FormMOD.php'">Modificar</button>
             </div>
-            <form id="dataFRM" action="ProcesoINS.php" method="POST">
-                <table id="tablaFRM">
-                    <tr>
-                        <td>
-                            <h4>Descripción:</h4>
-                        </td>
-                        <td>
-                            <input id="dataDES" type="text" name="DES" maxlenght="50" title="Máximo 50 carácteres" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>Origen:</h4>
-                        </td>
-                        <td>
-                            <input id="dataORG" type="text" name="ORG" maxlenght="10" title="Máximo 10 carácteres" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>Precio:</h4>
-                        </td>
-                        <td>
-                            <input id="dataPRC" type="text" name="PRC" maxlenght="10" title="Máximo 10 carácteres" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="botonesformulario" colspan="2">
-                            <input type="button" class="BotonesFormulario" value="Enviar" onclick="CheckForm();" />
-                            <input type="reset" class="BotonesFormulario" value="Cancelar" />
-                        </td>
-                    </tr>
-                </table>
-            </form>
+            <fieldset>
+                <legend>Insertar</legend>
+                <form id="dataFRM" action="ProcesoINS.php" method="POST">
+                    <table id="tablaFRM">
+                        <tr>
+                            <td>
+                                <h4>Descripción:</h4>
+                            </td>
+                            <td>
+                                <input id="dataDES" type="text" name="DES" maxlenght="50" title="Máximo 50 carácteres" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Origen:</h4>
+                            </td>
+                            <td>
+                                <input id="dataORG" type="text" name="ORG" maxlenght="10" title="Máximo 10 carácteres" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Precio:</h4>
+                            </td>
+                            <td>
+                                <input id="dataPRC" type="text" name="PRC" maxlenght="10" title="Máximo 10 carácteres" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="botonesformulario" colspan="2">
+                                <input type="button" class="BotonesFormulario" value="Enviar" onclick="CheckForm();" />
+                                <input type="reset" class="BotonesFormulario" value="Cancelar" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
         </div>
     </div>
 </body>

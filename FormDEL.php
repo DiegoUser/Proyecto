@@ -39,7 +39,7 @@
                                     <h4>Descripción:</h4>
                                 </td>
                                 <td>
-                                    <input id="dataDES" type="text" name="DES" maxlenght="50" title="Máximo 50 carácteres" />
+                                    <input id="dataDES" type="text" name="DES" maxlenght="50" title="Máximo 50 carácteres" disabled="true" value="deshabilitado" />
                                 </td>
                             </tr>
                             <tr>
@@ -47,7 +47,7 @@
                                     <h4>Origen:</h4>
                                 </td>
                                 <td>
-                                    <input id="dataORG" type="text" name="ORG" maxlenght="10" title="Máximo 10 carácteres" />
+                                    <input id="dataORG" type="text" name="ORG" maxlenght="10" title="Máximo 10 carácteres" disabled="true" value="deshabilitado" />
                                 </td>
                             </tr>
                             <tr>
@@ -55,21 +55,22 @@
                                     <h4>Precio:</h4>
                                 </td>
                                 <td>
-                                    <input id="dataPRC" type="text" name="PRC" maxlenght="10" title="Máximo 10 carácteres" />
+                                    <input id="dataPRC" type="text" name="PRC" maxlenght="10" title="Máximo 10 carácteres" disabled="true" value="deshabilitado" />
                                 </td>
                             </tr>
                             <!-- botones del formulario -->
                             <tr>
-                                <td colspan="2">
-                                    <input type="button" value="Confirmar" onclick="CheckID();" />
-                                    <input type="reset" value="Cancelar" />
+                                <td id="botonesformulario" colspan="2">
+                                    <input type="button" class="BotonesFormulario" value="Enviar" onclick="CheckID();" />
+                                    <input type="reset"  class="BotonesFormulario" value="Cancelar" />
                                 </td>
                             </tr>
                         </table>
                     </form>
                 </fieldset>
-
             </div>
+        </div>
+    </div>
 </body>
 
 </html>
