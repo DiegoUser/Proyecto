@@ -8,7 +8,7 @@
     $sql  = "UPDATE electro SET ";
     $sql .= "desELEC='$descripcion',";
     $sql .= "orgELEC='$origen',";
-    $sql .= "prcELEC='$precio',";
+    $sql .= "prcELEC='$precio'";
     $sql .= "WHERE idELEC=$id";                
     // ejecutar sentencia SQL
     mysqli_query($conex,$sql);
