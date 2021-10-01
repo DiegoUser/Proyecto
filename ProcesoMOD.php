@@ -2,7 +2,7 @@
     include "conexion.inc";
     // capturar datos del formulario
     $id          = $_POST["ID"];
-    $descripcion = $_POST["DES"];
+    $descripcion = utf8_decode($_POST["DES"]);
     $origen      = $_POST["ORG"];
     $precio      = $_POST["PRC"];
     // crear sentencia SQL para actualizar
