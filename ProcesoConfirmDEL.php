@@ -39,8 +39,10 @@ mysqli_close($conex);
 </head>
 
 <body>
+    <div class="contenedor">
+    <?php include "botones.inc" ?>
     <div id="contenido">
-        <fieldset>
+        <fieldset id="fldFRM">
             <legend>Eliminar</legend>
             <form id="dataFRM" action="ProcesoDEL.php" method="POST">
                 <table id="tablaFRM">
