@@ -43,7 +43,7 @@ mysqli_close($conex);
         <fieldset>
             <legend>Eliminar</legend>
             <form id="dataFRM" action="ProcesoDEL.php" method="POST">
-                <table id="tblFRM">
+                <table id="tablaFRM">
                     <tr>
                         <td>
                             <h4>ID:</h4>
