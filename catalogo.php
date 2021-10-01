@@ -24,16 +24,6 @@
             <form id="dataFRM" action="ProcesoINS.php" method="POST">
                 <table id="tablaFRM">
                     <tr>
-                        <td><h4>ID:</h4></td>
-                        <td>
-                            <input id="dataID"
-                            type="text"
-                            name="ID"
-                            maxlenght="10"
-                            title="Máximo 10 carácteres" />
-                        </td>
-                    </tr>
-                    <tr>
                     <td><h4>Descripción:</h4></td>
                         <td>
                             <input id="dataDES"
