@@ -15,7 +15,7 @@ function CheckForm(funcionalidad) {
         error   = true;
         mensaje = mensaje+"Origen:\n";
     } // endif
-    if (origen!==USA ||CHINA || INDIA){
+    if (origen!=='USA' && origen!=='CHINA' && origen!== 'INDIA'){
         error = true;
         mensaje = mensaje+"Origen habilitado:\n";
     }//endif
