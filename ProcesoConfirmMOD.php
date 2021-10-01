@@ -16,7 +16,7 @@ if (mysqli_num_rows($result) == 0) {
     // cargar y convertir datos
     $id          = $regELEC["idELEC"];
     $descripcion = utf8_encode($regELEC["desELEC"]);
-    $origen      = utf8_encode($regELEC["orgELEC"]);
+    $origen      = $regELEC["orgELEC"];
     $precio      = $regELEC["prcELEC"];
 } // endif
 // cerrar conexión
