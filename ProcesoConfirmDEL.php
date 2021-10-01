@@ -92,7 +92,7 @@ mysqli_close($conex);
                     <!--BOTONES DEL FORMULARIO-->
                     <tr>
                         <td id="botonesformulario" colspan="2">
-                            <input type="button" class="BotonesFormulario" value="Eliminar" onclick="CheckForm();" />
+                            <input type="button" class="BotonesFormulario" value="Eliminar" onclick="CheckForm('Eliminar');" />
                             <input type="reset" class="BotonesFormulario" name="Cancelar" onclick="SetPage('FormDEL.php')" ; />
                         </td>
                     </tr>
