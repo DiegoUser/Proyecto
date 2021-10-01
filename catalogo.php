@@ -26,7 +26,7 @@
                     <tr>
                     <td><h4>Descripción:</h4></td>
                         <td>
-                            <input descripcion ="dataDES"
+                            <input id ="dataDES"
                             type="text"
                             name="DESCRIPCION"
                             maxlenght="50"
@@ -36,7 +36,7 @@
                     <tr>    
                     <td><h4>Origen:</h4></td>
                         <td>
-                            <input origen ="dataORG"
+                            <input id ="dataORG"
                             type="text"
                             name="ORIGEN"
                             maxlenght="10"
@@ -46,7 +46,7 @@
                     <tr>
                         <td><h4>Precio:</h4></td>
                         <td>
-                            <input precio ="dataPRC"
+                            <input id ="dataPRC"
                             type="text"
                             name="PRECIO"
                             maxlenght="10"

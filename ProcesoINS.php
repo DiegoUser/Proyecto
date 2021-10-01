@@ -6,7 +6,7 @@
     // capturar datos del formulario
     $descripcion = utf8_decode($_POST["DES"]);
     $origen      = utf8_decode($_POST["ORG"]);
-    $precio      = utf8_decode($_POST["PRC"]);
+    $precio      = $_POST["PRC"];
     // crear sentencia SQL
     $sql  = "INSERT INTO ELECTRO ";
     $sql .= "(idELEC,desELEC,orgELEC,prcELEC) ";

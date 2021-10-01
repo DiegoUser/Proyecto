@@ -13,4 +13,3 @@
         // enviar mensaje de error
         header("Location: errorPage.php?MSG=NO se pudo SELECCIONAR Base de Datos");
     } // endif
-?>
