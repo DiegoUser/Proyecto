@@ -18,11 +18,7 @@
     <div class="contenedor">
         <?php include "botones.inc" ?>
         <div class="cuerpoCatalogo">
-            <div id="BotonesAcciones">
-                <button type="button" class="BotonesAcciones" onclick="window.location.href='catalogo.php'">Insertar</button>
-                <button type="button" class="BotonesAcciones" onclick="window.location.href='FormDEL.php'">Eliminar</button>
-                <button type="button" class="BotonesAcciones" onclick="window.location.href='FormMOD.php'">Modificar</button>
-            </div>
+         <?php include "botonesFORM.inc" ?>
             <fieldset id="fldFRM">
                 <legend>Insertar</legend>
                 <form id="dataFRM" action="ProcesoINS.php" method="POST">

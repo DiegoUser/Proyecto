@@ -13,20 +13,7 @@
         <title>Electro.Web</title>
     </head>
 <body>
-    <!--SECCIÓN CABECERA-->
-    <div id="head">
-        <h1>Minisistemas Diego</h1>
-    </div>   
-    <!--SECCIÓN MENÚ-->
-  <div id="menu">
-  <a href="index.html">Inicio</a>
-  <a href="FormPersonasINS.html">Insertar</a>
-  <a href="FormPersonasUPD.html">Actualizar</a>
-  <a href="FormPersonasDEL.html">Eliminar</a>
-  <a href="ProcesoPersonasVER.php">Visualizar</a>
-  <a href="javascript:window.close();">Salir</a>
-</div>
-    <!--SECCIÓN CONTENIDO-->
+
     <div id="contenido">
         <fieldset>
             <legend>Actualizar</legend>
