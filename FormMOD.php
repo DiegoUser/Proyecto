@@ -22,8 +22,8 @@
             <div id="contenido">
                 <fieldset id="fldFRM">
                     <legend>Actualizar</legend>
-                    <form id="dataFRM" action="ProcesoPersonasConfirmUPD.php" method="POST">
-                        <table id="tblFRM">
+                    <form id="dataFRM" action="ProcesoConfirmMOD.php" method="POST">
+                        <table id="tablaFRM">
                             <tr>
                                 <td>
                                     <h4>ID:</h4>
@@ -57,7 +57,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="2">
+                                <td id="botonesformulario" colspan="2">
                                     <input type="button" class="BotonesFormulario" value="Confirmar" onclick="CheckID();" />
                                     <input type="reset"  class="BotonesFormulario" name="Cancelar" />
                                 </td>
