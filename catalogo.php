@@ -17,9 +17,9 @@
         <?php include "botones.inc" ?>
         <div class="cuerpoCatalogo">
             <div id="BotonesAcciones">
-                <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoINS.php'">Insertar</button>
-                <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoDEL.php'">Eliminar</button>
-                <button type="button" class="BotonesAcciones" onclick="window.location.href='ProcesoMOD.php'">Modificar</button>
+                <button type="button" class="BotonesAcciones" onclick="window.location.href='catalogo.php'">Insertar</button>
+                <button type="button" class="BotonesAcciones" onclick="window.location.href='FormDEL.php'">Eliminar</button>
+                <button type="button" class="BotonesAcciones" onclick="window.location.href='FormMOD.php'">Modificar</button>
             </div>
             <form id="dataFRM" action="ProcesoINS.php" method="POST">
                 <table id="tablaFRM">
@@ -28,7 +28,7 @@
                         <td>
                             <input id ="dataDES"
                             type="text"
-                            name="DESCRIPCION"
+                            name="DES"
                             maxlenght="50"
                             title="Máximo 50 carácteres" />
                         </td>
@@ -38,7 +38,7 @@
                         <td>
                             <input id ="dataORG"
                             type="text"
-                            name="ORIGEN"
+                            name="ORG"
                             maxlenght="10"
                             title="Máximo 10 carácteres" />
                         </td>
@@ -48,7 +48,7 @@
                         <td>
                             <input id ="dataPRC"
                             type="text"
-                            name="PRECIO"
+                            name="PRC"
                             maxlenght="10"
                             title="Máximo 10 carácteres" />
                         </td>
