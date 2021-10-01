@@ -22,8 +22,8 @@
             <?php
             // capturar mensaje de error
             $mensaje = $_GET["MSG"];
-            echo "<p class='txtERR'>A T E N C I O N</p>\n";
-            echo "<p class='msgERR'>$mensaje</p>\n";
+            echo "<p>A T E N C I O N</p>\n";
+            echo "<p>$mensaje</p>\n";
             ?>
         </fieldset>
 
