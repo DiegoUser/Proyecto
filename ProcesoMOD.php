@@ -6,7 +6,7 @@
     $origen      = $_POST["ORG"];
     $precio      = $_POST["PRC"];
     // crear sentencia SQL para actualizar
-    $sql  = "UPDATE personas SET ";
+    $sql  = "UPDATE electro SET ";
     $sql .= "desELEC='$descripcion', ";
     $sql .= "orgELEC='$origen', ";
     $sql .= "prcELEC='$precio', ";
