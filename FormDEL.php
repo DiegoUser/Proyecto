@@ -29,7 +29,7 @@
                     <form id="dataFRM" action="ProcesoConfirmDEL.php" method="POST">
                         <table id="tablaFRM">
                             <tr>
-                                <td>ID:</td>
+                                <td><h4>ID:</h4></td>
                                 <td>
                                     <input id="dataID" type="text" name="ID" maxlength="5" title="Máximo 5 dígitos" />
                                 </td>

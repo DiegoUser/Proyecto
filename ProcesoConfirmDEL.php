@@ -46,55 +46,53 @@ mysqli_close($conex);
                 <table id="tblFRM">
                     <tr>
                         <td>
-                            ID:
+                            <h4>ID:</h4>
                         </td>
                         <td>
                             <input id="dataID" type="text" name="ID" 
                                 <?php
                                     echo "value='$id'";
-                                ?> readonly="true" 
-                            />
+                                ?> readonly="true" />
                         </td>
                     </tr>
                     <tr>
-                        <td>Descripción:</td>
+                        <td>
+                            <h4>Descripción:</h4>
+                        </td>
                         <td>
                             <input id="dataDES" type="text" name="DES" disabled="true" 
                                 <?php
                                     echo "value='$descripcion'";
-                                ?> 
-                            />
+                                ?> />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Origen:
+                            <h4>Origen:</h4>
                         </td>
                         <td>
                             <input id="dataORG" type="text" name="ORG" disabled="true" 
-                                <?php 
+                                <?php
                                     echo "value='$origen'";
-                                ?> 
-                            />
+                                ?> />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Precio:
+                            <h4> Precio:</h4>
                         </td>
                         <td>
                             <input id="dataPRC" type="text" name="PRC" disabled="true" 
-                                <?php 
+                                <?php
                                     echo "value='$precio'";
-                                ?> 
-                            />
+                                ?> />
                         </td>
                     </tr>
                     <!--BOTONES DEL FORMULARIO-->
                     <tr>
                         <td id="botonesformulario" colspan="2">
                             <input type="button" class="BotonesFormulario" value="Eliminar" onclick="CheckForm();" />
-                            <input type="reset"  class="BotonesFormulario" name="Cancelar" onclick="SetPage('FormDEL.php')" ; />
+                            <input type="reset" class="BotonesFormulario" name="Cancelar" onclick="SetPage('FormDEL.php')" ; />
                         </td>
                     </tr>
                 </table>
