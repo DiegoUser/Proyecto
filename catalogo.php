@@ -36,7 +36,7 @@
                     <tr>
                     <td><h4>Descripción:</h4></td>
                         <td>
-                            <input id="dataDESC"
+                            <input id="dataDES"
                             type="text"
                             name="DESCRIPCION"
                             maxlenght="50"
