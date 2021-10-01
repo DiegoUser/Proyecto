@@ -15,15 +15,14 @@
 </head>
 
 <body>
-<!-- SECCION CABECERA -->
-<?php
-    include "head.inc";
-?>
-<!-- SECCION MENU -->
-<?php
-    include "menu.inc";
-?>
-<!-- SECCION CONTENIDO --> 
+<div class="contenedor">
+        <?php include "botones.inc" ?>
+        <div class="cuerpoCatalogo">
+            <div id="BotonesAcciones">
+                <button type="button" class="BotonesAcciones" onclick="window.location.href='catalogo.php'">Insertar</button>
+                <button type="button" class="BotonesAcciones" onclick="window.location.href='FormDEL.php'">Eliminar</button>
+                <button type="button" class="BotonesAcciones" onclick="window.location.href='FormMOD.php'">Modificar</button>
+            </div>
 <div id="contenido">
  <fieldset id="fldFRM">
   <legend>Eliminar</legend>
