@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<div class="contenedor">
+    <div class="contenedor">
         <?php include "botones.inc" ?>
         <div class="cuerpoCatalogo">
             <div id="BotonesAcciones">
@@ -23,85 +23,53 @@
                 <button type="button" class="BotonesAcciones" onclick="window.location.href='FormDEL.php'">Eliminar</button>
                 <button type="button" class="BotonesAcciones" onclick="window.location.href='FormMOD.php'">Modificar</button>
             </div>
-<div id="contenido">
- <fieldset id="fldFRM">
-  <legend>Eliminar</legend>
-    <form id="dataFRM" action="ProcesoPersonasConfirmDEL.php" method="POST">
-     <table id="tblFRM">
-      <tr>
-       <td>ID:</td>
-       <td>
-         <input id="dataID" 
-                type="text" 
-                name="ID"
-                maxlength="5"
-                title="Máximo 5 dígitos"
-         />
-       </td>
-      </tr>     
-      <tr>
-       <td>Nombre:</td>
-       <td>
-         <input id="dataNOM" 
-                type="text" 
-                name="NOM"
-                maxlength="50"
-                title="Máximo 50 caracteres"
-                disabled="true"                
-                value="deshabilitado" 
-         />
-       </td>
-      </tr>
-      <tr>
-       <td>Dirección:</td>
-       <td>
-         <input id="dataDIR" 
-                type="text" 
-                name="DIR"
-                maxlength="100"
-                title="deshabilitado"
-                disabled="true"
-                value="deshabilitado"                                 
-         />
-       </td>
-      </tr>
-      <tr>
-       <td>Teléfono:</td>
-       <td>
-         <input id="dataTEL" 
-                type="text" 
-                name="TEL" 
-                maxlength="15"
-                title="deshabilitado"
-                disabled="true"
-                value="deshabilitado"                                 
-         />
-       </td>
-      </tr>
-      <tr>
-       <td>Departamento:</td>
-       <td>
-         <input id="dataDTO" 
-                type="text" 
-                name="DTO"
-                maxlength="30"
-                title="deshabilitado"
-                disabled="true"
-                value="deshabilitado"                                 
-         />
-       </td>
-      </tr>
-      <!-- botones del formulario -->
-      <tr>
-       <td colspan="2">
-         <input type="button" value="Confirmar" onclick="CheckID();"/>
-         <input type="reset"  value="Cancelar" />
-       </td>
-      </tr>                             
-     </table>
-    </form>  
- </fieldset>
+            <div id="contenido">
+                <fieldset id="fldFRM">
+                    <legend>Eliminar</legend>
+                    <form id="dataFRM" action="ProcesoConfirmDEL.php" method="POST">
+                        <table id="tablaFRM">
+                            <tr>
+                                <td>ID:</td>
+                                <td>
+                                    <input id="dataID" type="text" name="ID" maxlength="5" title="Máximo 5 dígitos" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Descripción:</h4>
+                                </td>
+                                <td>
+                                    <input id="dataDES" type="text" name="DES" maxlenght="50" title="Máximo 50 carácteres" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Origen:</h4>
+                                </td>
+                                <td>
+                                    <input id="dataORG" type="text" name="ORG" maxlenght="10" title="Máximo 10 carácteres" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Precio:</h4>
+                                </td>
+                                <td>
+                                    <input id="dataPRC" type="text" name="PRC" maxlenght="10" title="Máximo 10 carácteres" />
+                                </td>
+                            </tr>
+                            <!-- botones del formulario -->
+                            <tr>
+                                <td colspan="2">
+                                    <input type="button" value="Confirmar" onclick="CheckID();" />
+                                    <input type="reset" value="Cancelar" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
 
-</div>
+            </div>
 </body>
+
 </html>
