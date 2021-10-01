@@ -7,10 +7,10 @@
     $precio      = $_POST["PRC"];
     // crear sentencia SQL para actualizar
     $sql  = "UPDATE electro SET ";
-    $sql .= "desELE='$descripcion', ";
-    $sql .= "orgELE='$origen', ";
-    $sql .= "prcELE='$precio', ";
-    $sql .= "WHERE idELE=$id";
+    $sql .= "desELEC='$descripcion', ";
+    $sql .= "orgELEC='$origen', ";
+    $sql .= "prcELEC='$precio', ";
+    $sql .= "WHERE idELEC=$id";
     // ejecutar sentencia SQL
     mysqli_query($conex,$sql);
     // cerrar conexión
