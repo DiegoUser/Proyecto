@@ -2,11 +2,11 @@
     include "conexion.inc";
     // capturar datos del formulario
     $id          = $_POST["ID"];
-    $descripcion = utf8_decode($_POST["DES"]);
-    $origen      = utf8_decode($_POST["ORG"]);
+    $descripcion = $_POST["DES"];
+    $origen      = $_POST["ORG"];
     $precio      = $_POST["PRC"];
     // crear sentencia SQL para actualizar
-    $sql  = "UPDATE electro SET ";
+    $sql  = "UPDATE personas SET ";
     $sql .= "desELEC='$descripcion', ";
     $sql .= "orgELEC='$origen', ";
     $sql .= "prcELEC='$precio', ";
