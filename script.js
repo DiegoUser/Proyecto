@@ -1,4 +1,4 @@
-function CheckForm() {
+function CheckForm(funcionalidad) {
     // preperar mensaje y control de error
     var mensaje = "ATENCION!!!... Ingrese:\n";
     var error   = false;
@@ -31,11 +31,18 @@ function CheckForm() {
     if (error) {
         // enviar mensaje
         window.alert(mensaje);
+    }     
+ // endif
+    if(funcionalidad=='Eliminar'){
+        ConfirmDEL();
+    } else if(funcionalidad=='Modificar'){
+        ConfirmMOD();
     } else {
         // enviar formulario
         document.getElementById("dataFRM").submit();
-    } // endif                                
-} // end function
+    } //endif
+}// end function
+
 
 function CheckID() {
     // preperar mensaje y control de error
@@ -69,12 +76,23 @@ function SetPage(url) {
 
 function ConfirmDEL() {
     // muestra ventana de confirmación
-    var confirma = window.confirm("Confirme si desea eliminar el registro?");
+    var confirma = window.confirm("Confirme si desea eliminar el registro");
     if (confirma) {
         // enviar formulario
         document.getElementById("dataFRM").submit();
     } else {
         // volver al formulario DEL
         window.location = 'FormDEL.php';
+    }
+} // end function
+function ConfirmMOD() {
+    // muestra ventana de confirmación
+    var confirma = window.confirm("Confirme si desea modificar el registro");
+    if (confirma) {
+        // enviar formulario
+        document.getElementById("dataFRM").submit();
+    } else {
+        // volver al formulario DEL
+        window.location = 'FormMOD.php';
     }
 } // end function
