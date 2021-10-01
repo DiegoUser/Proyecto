@@ -42,7 +42,7 @@ mysqli_close($conex);
     <?php include "botones.inc" ?>
     <div id="contenido">
         <fieldset id="fldFRM">
-            <legend>Actualizar</legend>
+            <legend>Modificar</legend>
             <form id="dataFRM" action="ProcesoMOD.php" method="POST">
                 <table id="tablaFRM">
                     <tr>

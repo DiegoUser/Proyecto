@@ -21,7 +21,7 @@
             <?php include "botonesFORM.inc" ?>
             <div id="contenido">
                 <fieldset id="fldFRM">
-                    <legend>Actualizar</legend>
+                    <legend>Modificar</legend>
                     <form id="dataFRM" action="ProcesoConfirmMOD.php" method="POST">
                         <table id="tablaFRM">
                             <tr>
