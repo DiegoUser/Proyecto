@@ -15,6 +15,10 @@ function CheckForm(funcionalidad) {
         error   = true;
         mensaje = mensaje+"Origen:\n";
     } // endif
+    if (origen!==USA ||CHINA || INDIA){
+        error = true;
+        mensaje = mensaje+"Origen habilitado:\n";
+    }//endif
     if (precio=="") {
         error   = true;
         mensaje = mensaje+"Precio:\n";

@@ -82,7 +82,7 @@ body{
   }
   /*Botones para Insertar, Eliminar y Modificar*/
   .BotonesAcciones{
-    background: tomato;
+    background: rgb(255, 223, 211);
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 18px;
@@ -110,7 +110,7 @@ body{
   }
   /*Botones de enviar y cancelar*/
   .BotonesFormulario{
-    background: burlywood;
+    background: rgb(255, 223, 211);
     padding: 5px;
     cursor: pointer;
   }
