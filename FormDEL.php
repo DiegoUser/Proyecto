@@ -57,7 +57,7 @@
                             <!-- botones del formulario -->
                             <tr>
                                 <td id="botonesformulario" colspan="2">
-                                    <input type="button" class="BotonesFormulario" value="Enviar" onclick="CheckID();" />
+                                    <input type="button" class="BotonesFormulario" value="Confirmar" onclick="CheckID();" />
                                     <input type="reset"  class="BotonesFormulario" value="Cancelar" />
                                 </td>
                             </tr>
