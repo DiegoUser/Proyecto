@@ -23,7 +23,7 @@
                 <button type="button" class="BotonesAcciones" onclick="window.location.href='FormDEL.php'">Eliminar</button>
                 <button type="button" class="BotonesAcciones" onclick="window.location.href='FormMOD.php'">Modificar</button>
             </div>
-            <fieldset>
+            <fieldset id="fldFRM">
                 <legend>Insertar</legend>
                 <form id="dataFRM" action="ProcesoINS.php" method="POST">
                     <table id="tablaFRM">

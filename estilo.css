@@ -74,14 +74,11 @@ body{
     cursor: pointer;
   }
  #tablaFRM{
-    background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 20px;
     border-radius: 10px;
     padding: 2px;
-    margin-left: 25%;
-    width: 50%;
-    height: 200px;
+    width: 100%;
   }
   /*Botones para Insertar, Eliminar y Modificar*/
   .BotonesAcciones{
@@ -117,6 +114,11 @@ body{
     padding: 5px;
     cursor: pointer;
   }
+  #fldFRM{
+  background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+  width: 50%;
+  margin-left: 25%;
+}
   /*Fuentes
 font-family: 'Bona Nova', serif;
 font-family: 'PT Sans Narrow', sans-serif;
