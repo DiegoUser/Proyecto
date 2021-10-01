@@ -18,7 +18,7 @@
     <div class="contenedor">
         <?php include "botones.inc" ?>
         <div class="cuerpoCatalogo">
-         <?php include "botonesFORM.inc" ?>
+            <?php include "botonesFORM.inc" ?>
             <fieldset id="fldFRM">
                 <legend>Insertar</legend>
                 <form id="dataFRM" action="ProcesoINS.php" method="POST">
@@ -50,7 +50,7 @@
                         <tr>
                             <td id="botonesformulario" colspan="2">
                                 <input type="button" class="BotonesFormulario" value="Enviar" onclick="CheckForm();" />
-                                <input type="reset" class="BotonesFormulario" value="Cancelar" />
+                                <input type="reset"  class="BotonesFormulario" value="Cancelar" />
                             </td>
                         </tr>
                     </table>
