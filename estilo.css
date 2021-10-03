@@ -140,12 +140,19 @@ body{
   width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
-  background-color: #fcdddd;
   text-align: left;
+}
+#tabla th{
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+#FldConsultas{
+  background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
 }
   /*Fuentes
 font-family: 'Bona Nova', serif;
 font-family: 'PT Sans Narrow', sans-serif;
 font-family: 'Quintessential', cursive;
-font-family: 'Birthstone',
+font-family: 'Birthstone';
 font-family: 'Scheherazade New', serif;*/

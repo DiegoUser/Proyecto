@@ -18,7 +18,7 @@
     <div class="contenedor">
         <?php include "botones.inc" ?>
         <div class="CuerpoConsultas">
-        <fieldset id="fldLST">
+        <fieldset id="FldConsultas">
         <legend>Listado</legend>
            <table id="tabla">
                <tr>
