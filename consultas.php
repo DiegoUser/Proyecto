@@ -48,25 +48,16 @@
                 echo "<tr class='filaIMP'>\n";
             } // endif
            // crear fila de datos
-            echo "<td>$concepto</td>\n";
-            echo "<td>$importe</td>\n";
+            echo "<td>$descripcion</td>\n";
+            echo "<td>$origen</td>\n";
+            echo "<td>$precio</td>\n";
             echo "</tr>\n";
-            //sumar total
-            $total=$total+$importe;
             // siguiente fila
             $fila++;
            } //end while
            // cerrar conexión
            mysqli_close($conex);
                 ?>
-                <tr>
-                    <td class="total">Total</td>
-                    <td class="total">
-                    <?php
-                        echo "$total";
-                    ?>
-                    </td>
-                </tr>
             </table>
         </fieldset>
         </div>
