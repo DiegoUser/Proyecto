@@ -11,6 +11,6 @@
     // controlar selección de Base de Datos
     if (!$selDB) {
         // enviar mensaje de error
-        header("Location: errorPage.php?MSG=NO se pudo SELECCIONAR Base de Datos");
+        header("Location: errorPage.php?MSG=NO se pudo SELECCIONAR Base de Datos".mysqli_connect_error());
     } // endif
 ?>
