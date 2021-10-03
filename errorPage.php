@@ -26,6 +26,9 @@
             echo "<h2>$mensaje</h2>\n";
             ?>
         </fieldset>
+        <div id="BotonError">
+            <button type="button" class="error" onclick="window.location.href='catalogo.php'">Volver al Inicio</button>
+        </div>
 
     </div>
 </body>
