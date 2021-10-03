@@ -41,7 +41,7 @@ function CheckForm(funcionalidad) {
         ConfirmDEL();
     } else if(funcionalidad=='Modificar'){
         ConfirmMOD();
-    } else {
+    } else{
         // enviar formulario
         document.getElementById("dataFRM").submit();
     } //endif

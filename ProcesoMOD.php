@@ -2,7 +2,7 @@
     include "conexion.inc";
     $id          = $_POST["ID"];
     $descripcion = utf8_decode($_POST["DES"]);
-    $origen      = $_POST["ORG"];
+    $origen      = strtoupper($_POST["ORG"]);
     $precio      = $_POST["PRC"];
     // crear sentencia SQL para actualizar
     $sql  = "UPDATE electro SET ";

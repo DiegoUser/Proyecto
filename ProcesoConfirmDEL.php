@@ -9,7 +9,7 @@ $result = mysqli_query($conex, $sql);
 // controlar existencia
 if (mysqli_num_rows($result) == 0) {
     // enviar mensaje de error
-    die(header("Location: errorPage.php"));
+    die(header("Location: errorPage.php?MSG=El ID no existe".mysqli_connect_error()));
 } else {
     // cargar registro
     $regELEC     = mysqli_fetch_array($result);
