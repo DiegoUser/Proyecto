@@ -115,10 +115,10 @@ function Filtro() {
     error = true;
     mensaje = mensaje + "Origen habilitado:\n";
   } //endif
-} // endif
-if (error) {
-  // enviar mensaje
-  window.alert(mensaje);
-}else{
+  if (error) {
+    // enviar mensaje
+    window.alert(mensaje);
+  } else {
     document.getElementById("dataFRM").submit();
-}
+  }//endif
+} // end function
