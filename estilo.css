@@ -159,6 +159,9 @@ body{
 #BtnConsultas{
   margin-left: 35%;
 }
+#Filtro{
+  background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+}
   /*Fuentes
 font-family: 'Bona Nova', serif;
 font-family: 'PT Sans Narrow', sans-serif;
