@@ -136,6 +136,7 @@ body{
   font-family: 'Scheherazade New', serif;
   font-size: 20px;
 }
+/*Tabla Consultas*/
 #tabla{
   width: 100%;
   table-layout: fixed;
@@ -155,16 +156,7 @@ body{
   background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
   border: 2px solid rgb( 255, 255, 255);
 }
-.BotonesConsultas{
-  background: rgb(255, 223, 211);
-  padding: 5px;
-  cursor: pointer;
-  font-size: 15px;
-  margin-left: 100px;
-}
-#BtnConsultas{
-  margin-left: 35%;
-}
+/*Formulario para filtrar*/
 #Filtro{
   background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
   margin-top: 10px;
