@@ -22,18 +22,21 @@
         <legend>Listado</legend>
            <table id="tabla">
                <tr>
-                   <th>CONCEPTO</th>
-                   <th>IMPORTE</th>
+                   <th>Descripción</th>
+                   <th>Origen</th>
+                   <th>Precio</th>
                </tr>
         <?php
-           include('conexion.php');
+           include('conexion.inc');+mysqli_set_charset($conex, "utf8");
+           // crear sentencia SQL
+           $sql = "SELECT * FROM electro";
+           // ejecutar sentencia SQL
+           $result = mysqli_query($conex,$sql);
            // iniciar contador de fila
            $fila = 1;
-           // guardar valor de total
-           $total = 0;
            // extraer registro de la matríz de resultado
            while ($regELEC = mysqli_fetch_array($result)) {
-           $id             = $regELEC ["IdELEC"];
+           $id             = $regELEC ["idELEC"];
            $descripcion    = utf8_encode($regELEC ["desELEC"]);
            $origen         = strtoupper($regELEC ["orgELEC"]);
            $precio         = $regELEC["prcELEC"];
