@@ -16,14 +16,14 @@
 
 <body>
     <!-- SECCION CONTENIDO -->
-    <div id="contenido">
-        <fieldset>
+    <div class="contenedor">
+        <fieldset id="error">
             <legend>E R R O R</legend>
             <?php
             // capturar mensaje de error
             $mensaje = $_GET["MSG"];
-            echo "<p>A T E N C I O N</p>\n";
-            echo "<p>$mensaje</p>\n";
+            echo "<h2>A T E N C I O N</h2>\n";
+            echo "<h2>$mensaje</h2>\n";
             ?>
         </fieldset>
 
