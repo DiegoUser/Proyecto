@@ -19,8 +19,25 @@
         <?php include "botones.inc" ?>
         <div class="CuerpoConsultas">
             <div id="BtnConsultas">
+                <form id="dataFRM" action="ProcesoINS.php" method="POST">
+                    <table id="tablaFRM">
+                        <tr>
+                            <td>
+                                <h4>Origen:</h4>
+                            </td>
+                            <td>
+                                <input id="dataORG" type="text" name="ORG" maxlenght="10" title="Máximo 10 carácteres" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="botonesformulario" colspan="2">
+                                <input type="button" class="BotonesFormulario" value="Buscar" onclick="CheckForm();" />
+                                <input type="reset" class="BotonesFormulario" value="Cancelar" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
                 <button type="button" class="BotonesConsultas" onclick="Ver()">Ver Lista Completa</button>
-                <button type="button" class="BotonesConsultas" onclick="Ver()">Ver Lista Filtrada</button>
             </div>
             <fieldset id="FldConsultas">
                 <legend>Listado</legend>
