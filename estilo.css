@@ -141,6 +141,7 @@ body{
   table-layout: fixed;
   border-collapse: collapse;
   text-align: left;
+  border: 2px solid rgb( 255, 255, 255);
 }
 #tabla th{
   font-size: 30px;
@@ -148,10 +149,11 @@ body{
   font-family: 'PT Sans Narrow', sans-serif;
 }
 #tabla td{
-  border: 1px solid;
+  border: 2px solid rgb(255, 255, 255);
 }
 #FldConsultas{
   background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+  border: 2px solid rgb( 255, 255, 255);
 }
 .BotonesConsultas{
   background: rgb(255, 223, 211);
