@@ -150,6 +150,15 @@ body{
 #FldConsultas{
   background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
 }
+.BotonesConsultas{
+  background: rgb(255, 223, 211);
+  padding: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+#BtnConsultas{
+  margin-left: 35%;
+}
   /*Fuentes
 font-family: 'Bona Nova', serif;
 font-family: 'PT Sans Narrow', sans-serif;

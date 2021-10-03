@@ -18,7 +18,10 @@
     <div class="contenedor">
         <?php include "botones.inc" ?>
         <div class="CuerpoConsultas">
-
+            <div id="BtnConsultas">
+                <button type="button" class="BotonesConsultas" onclick="Ver()">Ver Lista Completa</button>
+                <button type="button" class="BotonesConsultas" onclick="Ver()">Ver Lista Filtrada</button>
+            </div>
             <fieldset id="FldConsultas">
                 <legend>Listado</legend>
                 <table id="tabla">
