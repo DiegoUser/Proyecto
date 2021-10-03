@@ -128,6 +128,21 @@ body{
   background: rgb(225, 184, 148);
   font-size: 15px;
 }
+.filaPAR{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
+}
+.filaIMP{
+  font-family: 'Scheherazade New', serif;
+  font-size: 20px;
+}
+#tabla{
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: #fcdddd;
+  text-align: left;
+}
   /*Fuentes
 font-family: 'Bona Nova', serif;
 font-family: 'PT Sans Narrow', sans-serif;
