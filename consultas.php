@@ -17,7 +17,59 @@
 <body>
     <div class="contenedor">
         <?php include "botones.inc" ?>
-
+        <div class="CuerpoConsultas">
+        <fieldset id="fldLST">
+        <legend>Listado</legend>
+           <table id="tabla">
+               <tr>
+                   <th>CONCEPTO</th>
+                   <th>IMPORTE</th>
+               </tr>
+        <?php
+           include('conexion.php');
+           // iniciar contador de fila
+           $fila = 1;
+           // guardar valor de total
+           $total = 0;
+           // extraer registro de la matríz de resultado
+           while ($regELEC = mysqli_fetch_array($result)) {
+           $id             = $regELEC ["IdELEC"];
+           $descripcion    = utf8_encode($regELEC ["desELEC"]);
+           $origen         = strtoupper($regELEC ["orgELEC"]);
+           $precio         = $regELEC["prcELEC"];
+           // calcular fila par/impar
+            $resto = $fila%2;
+            // determinar fila par/impar
+            if ($resto==0) {
+                // crear fila par
+                echo "<tr class='filaPAR'>\n";
+            } else {
+                // crear fila impar
+                echo "<tr class='filaIMP'>\n";
+            } // endif
+           // crear fila de datos
+            echo "<td>$concepto</td>\n";
+            echo "<td>$importe</td>\n";
+            echo "</tr>\n";
+            //sumar total
+            $total=$total+$importe;
+            // siguiente fila
+            $fila++;
+           } //end while
+           // cerrar conexión
+           mysqli_close($conex);
+                ?>
+                <tr>
+                    <td class="total">Total</td>
+                    <td class="total">
+                    <?php
+                        echo "$total";
+                    ?>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        </div>
     </div>
 </body>
 
