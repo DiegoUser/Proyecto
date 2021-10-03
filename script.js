@@ -100,3 +100,7 @@ function ConfirmMOD() {
         window.location = 'FormMOD.php';
     }
 } // end function
+
+function Ver() {
+    //Muestra el listado
+}
