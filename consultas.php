@@ -17,7 +17,7 @@
 <body>
     <div class="contenedor">
         <?php include "botones.inc" ?>
-            <div id="Filtro">
+        <div id="Filtro">
             <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
                 <table id="TablaConsultas">
                     <tr>
@@ -31,59 +31,11 @@
                     <tr>
                         <td id="botonesformulario" colspan="2">
                             <input type="button" class="BotonesFormulario" value="Buscar" onclick="Filtro();" />
-                            <input type="reset"  class="BotonesFormulario" value="Cancelar" />
+                            <input type="reset" class="BotonesFormulario" value="Cancelar" />
                         </td>
                     </tr>
                 </table>
-            </div>
-        </form>
-        <div class="CuerpoConsultas">
-            <fieldset id="FldConsultas">
-                <legend>Listado</legend>
-                <table id="tabla">
-                    <tr>
-                        <th>Descripción</th>
-                        <th>Origen</th>
-                        <th>Precio</th>
-                    </tr>
-                    <?php
-                    include('conexion.inc');
-                    +mysqli_set_charset($conex, "utf8");
-                    // crear sentencia SQL
-                    $sql = "SELECT * FROM electro";
-                    // ejecutar sentencia SQL
-                    $result = mysqli_query($conex, $sql);
-                    // iniciar contador de fila
-                    $fila = 1;
-                    // extraer registro de la matríz de resultado
-                    while ($regELEC = mysqli_fetch_array($result)) {
-                        $id             = $regELEC["idELEC"];
-                        $descripcion    = utf8_encode($regELEC["desELEC"]);
-                        $origen         = strtoupper($regELEC["orgELEC"]);
-                        $precio         = $regELEC["prcELEC"];
-                        // calcular fila par/impar
-                        $resto = $fila % 2;
-                        // determinar fila par/impar
-                        if ($resto == 0) {
-                            // crear fila par
-                            echo "<tr class='filaPAR'>\n";
-                        } else {
-                            // crear fila impar
-                            echo "<tr class='filaIMP'>\n";
-                        } // endif
-                        // crear fila de datos
-                        echo "<td>$descripcion</td>\n";
-                        echo "<td>$origen</td>\n";
-                        echo "<td>$precio</td>\n";
-                        echo "</tr>\n";
-                        // siguiente fila
-                        $fila++;
-                    } //end while
-                    // cerrar conexión
-                    mysqli_close($conex);
-                    ?>
-                </table>
-            </fieldset>
+            </form>
         </div>
     </div>
 </body>
