@@ -60,6 +60,9 @@
                     } elseif ($origen = "INDIA") {
                         $sql = "SELECT * FROM electro WHERE orgELEC = INDIA";
                         $result = mysqli_query($conex, $sql);
+                    }else{
+                        $sql = "SELECT * FROM electro";
+                        $result = mysqli_query($conex, $sql);
                     }
                     // iniciar contador de fila
                     $fila = 1;
@@ -67,7 +70,7 @@
                     while ($regELEC     = mysqli_fetch_array($result)) {
                         $id             = $regELEC["idELEC"];
                         $descripcion    = utf8_encode($regELEC["desELEC"]);
-                        $origen         = strtoupper($regELEC["orgELEC"]);
+                        $origen         = $regELEC["orgELEC"];
                         $precio         = $regELEC["prcELEC"];
                         // calcular fila par/impar
                         $resto = $fila % 2;
