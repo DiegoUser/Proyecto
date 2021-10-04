@@ -51,13 +51,19 @@
                     include('conexion.inc');
                     mysqli_set_charset($conex, "utf8");
                     // crear sentencia SQL
-                    $sql = "SELECT * FROM electro";
+                    if ($origen="USA"){
+                        $sql = "SELECT * FROM electro WHERE orgELEC = USA";
+                    } elseif($origen="CHINA"){
+                        $sql = "SELECT * FROM electro WHERE orgELEC = CHINA";
+                    } elseif($origen="INDIA"){
+                        $sql = "SELECT * FROM electro WHERE orgELEC = INDIA";
+                    }
                     // ejecutar sentencia SQL
                     $result = mysqli_query($conex, $sql);
                     // iniciar contador de fila
                     $fila = 1;
                     // extraer registro de la matríz de resultado
-                    while ($regELEC = mysqli_fetch_array($result)) {
+                    while ($regELEC     = mysqli_fetch_array($result)) {
                         $id             = $regELEC["idELEC"];
                         $descripcion    = utf8_encode($regELEC["desELEC"]);
                         $origen         = strtoupper($regELEC["orgELEC"]);
