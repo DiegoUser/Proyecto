@@ -17,7 +17,7 @@
 <body>
     <div class="contenedor">
         <?php include "botones.inc" ?>
-            <div id="Filtro">
+        <div id="Filtro">
             <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
                 <table id="TablaConsultas">
                     <tr>
@@ -31,11 +31,11 @@
                     <tr>
                         <td id="botonesformulario" colspan="2">
                             <input type="button" class="BotonesFormulario" value="Buscar" onclick="Filtro();" />
-                            <input type="reset"  class="BotonesFormulario" value="Cancelar" />
+                            <input type="reset" class="BotonesFormulario" value="Cancelar" />
                         </td>
                     </tr>
                 </table>
-            </div>
+        </div>
         </form>
         <div class="CuerpoConsultas">
             <fieldset id="FldConsultas">
@@ -51,15 +51,16 @@
                     include('conexion.inc');
                     mysqli_set_charset($conex, "utf8");
                     // crear sentencia SQL
-                    if ($origen="USA"){
+                    if ($origen = "USA") {
                         $sql = "SELECT * FROM electro WHERE orgELEC = USA";
-                    } elseif($origen="CHINA"){
+                        $result = mysqli_query($conex, $sql);
+                    } elseif ($origen = "CHINA") {
                         $sql = "SELECT * FROM electro WHERE orgELEC = CHINA";
-                    } elseif($origen="INDIA"){
+                        $result = mysqli_query($conex, $sql);
+                    } elseif ($origen = "INDIA") {
                         $sql = "SELECT * FROM electro WHERE orgELEC = INDIA";
+                        $result = mysqli_query($conex, $sql);
                     }
-                    // ejecutar sentencia SQL
-                    $result = mysqli_query($conex, $sql);
                     // iniciar contador de fila
                     $fila = 1;
                     // extraer registro de la matríz de resultado
