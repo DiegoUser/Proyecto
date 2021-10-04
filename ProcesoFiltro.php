@@ -8,5 +8,5 @@
     // cerrar conexión
     mysqli_close($conex);
     // volver al forumulario automáticamente
-    header("Location: consultas.php");
+    header("Location: filtrado.php");
 ?>

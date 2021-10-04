@@ -42,6 +42,7 @@
                 <legend>Listado</legend>
                 <table id="tabla">
                     <tr>
+                        <th>ID</th>
                         <th>Descripción</th>
                         <th>Origen</th>
                         <th>Precio</th>
@@ -72,6 +73,7 @@
                             echo "<tr class='filaIMP'>\n";
                         } // endif
                         // crear fila de datos
+                        echo "<td>$id</td>\n";
                         echo "<td>$descripcion</td>\n";
                         echo "<td>$origen</td>\n";
                         echo "<td>$precio</td>\n";
