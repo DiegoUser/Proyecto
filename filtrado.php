@@ -49,7 +49,7 @@
                     </tr>
                     <?php
                     include('conexion.inc');
-                    +mysqli_set_charset($conex, "utf8");
+                    mysqli_set_charset($conex, "utf8");
                     // crear sentencia SQL
                     $sql = "SELECT * FROM electro";
                     // ejecutar sentencia SQL

@@ -107,10 +107,6 @@ function Filtro() {
   // capturar datos del formulario
   var origen = document.getElementById("dataORG").value;
   // validar datos
-  if (origen == "") {
-    error = true;
-    mensaje = mensaje + "Origen:\n";
-  } // endif
   if (origen !== "USA" && origen !== "CHINA" && origen !== "INDIA") {
     error = true;
     mensaje = mensaje + "Origen habilitado:\n";
