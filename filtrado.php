@@ -53,17 +53,14 @@
                     // crear sentencia SQL
                     if ($origen = "USA") {
                         $sql = "SELECT * FROM electro WHERE orgELEC = USA";
-                        $result = mysqli_query($conex, $sql);
                     } elseif ($origen = "CHINA") {
                         $sql = "SELECT * FROM electro WHERE orgELEC = CHINA";
-                        $result = mysqli_query($conex, $sql);
                     } elseif ($origen = "INDIA") {
                         $sql = "SELECT * FROM electro WHERE orgELEC = INDIA";
-                        $result = mysqli_query($conex, $sql);
                     }else{
                         $sql = "SELECT * FROM electro";
-                        $result = mysqli_query($conex, $sql);
                     }
+                    $result = mysqli_query($conex, $sql);
                     // iniciar contador de fila
                     $fila = 1;
                     // extraer registro de la matríz de resultado
