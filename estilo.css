@@ -160,7 +160,11 @@ body{
 #Filtro{
   background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
   margin-top: 10px;
-}#Volver{
+  width: 25%;
+  height: 80px;
+  font-size: 24px;
+}
+#Volver{
   margin-left: 45%;
 }
   /*Fuentes

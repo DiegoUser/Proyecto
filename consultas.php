@@ -25,7 +25,7 @@
                             <h4>Origen:</h4>
                         </td>
                         <td>
-                            <input id="dataORG" type="text" name="ORG" maxlenght="10" title="Máximo 10 carácteres" />
+                            <input id="dataORG" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" type="text" name="ORG" maxlenght="10" title="Máximo 10 carácteres" />
                         </td>
                     </tr>
                     <tr>
