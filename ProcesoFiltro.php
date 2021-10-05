@@ -13,6 +13,7 @@
     <script type="text/javascript" src="script.js"></script>
     <title>Electro.Web</title>
 </head>
+
 <body>
 
     <?php
@@ -20,6 +21,7 @@
     ?>
     <!-- SECCION CONTENIDO -->
     <div id="contenido">
+        <?php include "botones.inc" ?>
         <fieldset id="FldConsultas">
             <legend>Listado</legend>
             <table id="tabla">
