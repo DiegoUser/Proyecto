@@ -35,13 +35,11 @@ function CheckForm(funcionalidad) {
   if (error) {
     // enviar mensaje
     window.alert(mensaje);
-  }
-  // endif
-  if (funcionalidad == "Eliminar") {
+  } else if (funcionalidad == "Eliminar") {
     ConfirmDEL();
   } else if (funcionalidad == "Modificar") {
     ConfirmMOD();
-  } else {
+  } else if (funcionalidad == 'Insertar') {
     // enviar formulario
     document.getElementById("dataFRM").submit();
   } //endif
