@@ -23,6 +23,26 @@
     <div class="contenedor">
         <div id="contenido">
             <?php include "botones.inc" ?>
+            <div id="Filtro">
+            <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
+                <table id="TablaConsultas">
+                    <tr>
+                        <td>
+                            <h4>Origen:</h4>
+                        </td>
+                        <td>
+                            <input id="dataORG" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" type="text" name="ORG" maxlenght="10" title="Máximo 10 carácteres" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="botonesformulario" colspan="2">
+                            <input type="button" class="BotonesFormulario" value="Buscar" onclick="Filtro();" />
+                            <input type="reset" class="BotonesFormulario" value="Cancelar" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
             <fieldset id="FldConsultas">
                 <legend>Listado</legend>
                 <table id="tabla">
@@ -57,9 +77,6 @@
                     }
                     ?>
             </fieldset>
-            <div id="Volver">
-                <button type="button" class="BotonesFormulario" onclick="window.location.href='consultas.php'">Volver</button>
-            </div>
         </div>
 </body>
 
