@@ -21,7 +21,6 @@
     ?>
     <!-- SECCION CONTENIDO -->
     <div class="contenedor">
-        <div id="contenido">
             <?php include "botones.inc" ?>
             <div id="Filtro">
             <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
