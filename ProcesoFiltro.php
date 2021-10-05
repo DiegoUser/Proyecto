@@ -56,7 +56,9 @@
                 }
                 ?>
         </fieldset>
-        <button type="button" class="BotonesFormulario" value="volver" onclick="SetPage();"/>
+        <div id="Volver">
+            <button type="button" class="BotonesFormulario" onclick="window.location.href='consultas.php'">Volver</button>
+        </div>
 </body>
 
 </html>
