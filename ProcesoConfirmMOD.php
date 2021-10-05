@@ -62,7 +62,7 @@ mysqli_close($conex);
                             <h4>Descripción:</h4>
                         </td>
                         <td>
-                            <input id="dataDES" type="text" name="DES" 
+                            <input id="dataDES" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" type="text" name="DES" 
                                 <?php
                                     echo "value='$descripcion'";
                                 ?> 
@@ -74,7 +74,7 @@ mysqli_close($conex);
                             <h4>Origen:</h4>
                         </td>
                         <td>
-                            <input id="dataORG" type="text" name="ORG" 
+                            <input id="dataORG" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" type="text" name="ORG" 
                                 <?php 
                                     echo "value='$origen'";
                                 ?> 
@@ -86,7 +86,7 @@ mysqli_close($conex);
                             <h4>Precio:</h4>
                         </td>
                         <td>
-                            <input id="dataPRC" type="text" name="PRC" 
+                            <input id="dataPRC" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" type="text" name="PRC" 
                                 <?php 
                                     echo "value='$precio'";
                                 ?> 
