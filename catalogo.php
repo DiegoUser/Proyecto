@@ -44,7 +44,7 @@
                                 <h4>Precio:</h4>
                             </td>
                             <td>
-                                <input id="dataPRC" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" type="text" name="PRC" maxlenght="10" title="Máximo 10 carácteres" />
+                                <input id="dataPRC" type="text" name="PRC" maxlenght="10" title="Máximo 10 carácteres" />
                             </td>
                         </tr>
                         <tr>

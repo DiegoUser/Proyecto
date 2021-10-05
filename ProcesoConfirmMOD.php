@@ -86,7 +86,7 @@ mysqli_close($conex);
                             <h4>Precio:</h4>
                         </td>
                         <td>
-                            <input id="dataPRC" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" type="text" name="PRC" 
+                            <input id="dataPRC" type="text" name="PRC" 
                                 <?php 
                                     echo "value='$precio'";
                                 ?> 
