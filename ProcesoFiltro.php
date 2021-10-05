@@ -56,6 +56,7 @@
                 }
                 ?>
         </fieldset>
+        <button type="button" class="BotonesFormulario" value="volver" onclick="SetPage();"/>
 </body>
 
 </html>
