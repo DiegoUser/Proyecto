@@ -160,6 +160,8 @@ body{
 #Filtro{
   background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
   margin-top: 10px;
+}#Volver{
+  margin-left: 45%;
 }
   /*Fuentes
 font-family: 'Bona Nova', serif;

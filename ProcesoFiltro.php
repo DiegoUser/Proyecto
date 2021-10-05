@@ -20,44 +20,46 @@
     $origen = $_POST["ORG"];
     ?>
     <!-- SECCION CONTENIDO -->
-    <div id="contenido">
-        <?php include "botones.inc" ?>
-        <fieldset id="FldConsultas">
-            <legend>Listado</legend>
-            <table id="tabla">
-                <tr>
-                    <th>ID</th>
-                    <th>Descripción</th>
-                    <th>Origen</th>
-                    <th>Precio</th>
-                </tr>
-                <?php
-                if (empty($origen)) {
-                    include "conexion.inc";
-                    $sql = "SELECT * FROM electro";
-                    $result = mysqli_query($conex, $sql);
-                    include_once "ConsultaTabla.php";
-                }
-                if (!empty($origen)) {
-                    include "conexion.inc";
-                    $sql = "SELECT * FROM electro WHERE orgELEC LIKE '%$origen%' ";
-                    $result = mysqli_query($conex, $sql);
-                    if (mysqli_num_rows($result) == 0) {
-                ?>
-                        <td style="font-size: 35px;">No</td>
-                        <td style="font-size: 35px;">Existe</td>
-                        <td style="font-size: 35px;">Registro</td>
-                <?php
-                        mysqli_close($conex);
-                        header("refresh:3 url=http://127.0.0.1/Proyecto/consultas.php");
-                    } else {
+    <div class="contenedor">
+        <div id="contenido">
+            <?php include "botones.inc" ?>
+            <fieldset id="FldConsultas">
+                <legend>Listado</legend>
+                <table id="tabla">
+                    <tr>
+                        <th>ID</th>
+                        <th>Descripción</th>
+                        <th>Origen</th>
+                        <th>Precio</th>
+                    </tr>
+                    <?php
+                    if (empty($origen)) {
+                        include "conexion.inc";
+                        $sql = "SELECT * FROM electro";
+                        $result = mysqli_query($conex, $sql);
                         include_once "ConsultaTabla.php";
                     }
-                }
-                ?>
-        </fieldset>
-        <div id="Volver">
-            <button type="button" class="BotonesFormulario" onclick="window.location.href='consultas.php'">Volver</button>
+                    if (!empty($origen)) {
+                        include "conexion.inc";
+                        $sql = "SELECT * FROM electro WHERE orgELEC LIKE '%$origen%' ";
+                        $result = mysqli_query($conex, $sql);
+                        if (mysqli_num_rows($result) == 0) {
+                    ?>
+                            <td style="font-size: 35px;">No</td>
+                            <td style="font-size: 35px;">Existe</td>
+                            <td style="font-size: 35px;">Registro</td>
+                    <?php
+                            mysqli_close($conex);
+                            header("refresh:3 url=http://127.0.0.1/Proyecto/consultas.php");
+                        } else {
+                            include_once "ConsultaTabla.php";
+                        }
+                    }
+                    ?>
+            </fieldset>
+            <div id="Volver">
+                <button type="button" class="BotonesFormulario" onclick="window.location.href='consultas.php'">Volver</button>
+            </div>
         </div>
 </body>
 
