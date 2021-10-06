@@ -15,58 +15,61 @@
 </head>
 
 <body>
-
-    <?php
-    $origen = $_POST["ORG"];
-    ?>
     <!-- SECCION CONTENIDO -->
     <div class="contenedor">
-            <?php include "botones.inc" ?>
-            <div id="Filtro">
+        <?php include "botones.inc" ?>
+        <div id="Filtro">
             <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
                 <table id="TablaConsultas">
-                    <tr>
-                        <td>
-                            <h4>Origen:</h4>
-                        </td>
-                        <td>
-                            <input id="dataORG" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" type="text" name="ORG" maxlenght="10" title="Máximo 10 carácteres" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="botonesformulario" colspan="2">
-                            <input type="button" class="BotonesFormulario" value="Buscar" onclick="Filtro();" />
-                            <input type="reset" class="BotonesFormulario" value="Cancelar" />
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-            <fieldset id="FldConsultas">
-                <legend>Listado</legend>
-                <table id="tabla">
-                    <tr>
-                        <th>ID</th>
-                        <th>Descripción</th>
-                        <th>Origen</th>
-                        <th>Precio</th>
-                    </tr>
                     <?php
+                    // determinar filtro del listado
+                    if (isset($_POST["ORG"])) {
+                        // asignar filtro especificado en el formulario
+                        $origen = $_POST["ORG"];
+                    } else {
+                        // asignar filtro desde el listado
+                        $origen = $_GET["ORG"];
+                    } // endif
+                    // determinar orden del listado
+                    if (isset($_GET["ORD"])) {
+                        // obtener orden especificado
+                        $orden = $_GET["ORD"];
+                    } else {
+                        // establecer orden por defecto
+                        $orden = "idELEC";
+                    } // endif
+                    // determinar filtro
+                    echo "
+                <tr>
+                    <th>
+                        <a href='ProcesoFiltro.php?ORD=idELEC&ORG=$origen'>ID</a>
+                    </th>
+                    <th>
+                    <a href='ProcesoFiltro.php?ORD=desELEC&ORG=$origen'>Descripcion</a>
+                    </th>
+                    <th>
+                    <a href='ProcesoFiltro.php?ORD=orgELEC&ORG=$origen'>Origen</a>
+                    </th>
+                    <th>
+                    <a href='ProcesoFiltro.php?ORD=prcELEC&ORG=$origen'>Precio</a>
+                    </th>
+                </tr>
+                ";
                     if (empty($origen)) {
-                        include "conexion.inc";
-                        $sql = "SELECT * FROM electro";
+                        include "conexion.php";
+                        $sql = "SELECT * FROM electro ORDER BY $orden";
                         $result = mysqli_query($conex, $sql);
                         include_once "ConsultaTabla.php";
                     }
                     if (!empty($origen)) {
                         include "conexion.inc";
-                        $sql = "SELECT * FROM electro WHERE orgELEC LIKE '%$origen%' ";
+                        $sql = "SELECT * FROM electro WHERE orgELEC LIKE '%$origen%' ORDER BY $orden";
                         $result = mysqli_query($conex, $sql);
                         if (mysqli_num_rows($result) == 0) {
                     ?>
-                            <td style="font-size: 35px;">No</td>
-                            <td style="font-size: 35px;">Existe</td>
-                            <td style="font-size: 35px;">Registro</td>
+                            <td>No</td>
+                            <td>Existe</td>
+                            <td>Registro</td>
                     <?php
                             mysqli_close($conex);
                             header("refresh:3 url=http://127.0.0.1/Proyecto/consultas.php");
@@ -75,7 +78,7 @@
                         }
                     }
                     ?>
-            </fieldset>
+                    </fieldset>
         </div>
 </body>
 
