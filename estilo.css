@@ -88,7 +88,7 @@ body{
   }
   /*Botones para Insertar, Eliminar y Modificar*/
   .BotonesAcciones{
-    background: rgb(255, 223, 211);
+    background: #fdcae1;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 18px;
@@ -116,7 +116,7 @@ body{
   }
   /*Botones de enviar y cancelar*/
   .BotonesFormulario{
-    background: rgb(255, 223, 211);
+    background: #fdcae1;
     padding: 5px;
     cursor: pointer;
   }
@@ -134,7 +134,7 @@ body{
 }
 /*boton error*/
 .error{
-  background: rgb(225, 184, 148);
+  background: #fdcae1;
   font-size: 22px;
   font-style: italic;
 }
