@@ -170,11 +170,24 @@ body{
 #Filtro{
   background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
   margin-top: 10px;
-  width: 25%;
-  height: 80px;
   font-size: 24px;
 }
-  /*Fuentes
+a:link {
+  color: green;
+  text-decoration: none;
+  padding: 5px;        
+}
+a:visited {
+  color: #C9BABA;
+  text-decoration: none;
+  padding: 5px;        
+}
+a:hover {
+  color: orange;
+  text-decoration: underline;
+  padding: 5px;    
+}
+/*fuentes
 font-family: 'Bona Nova', serif;
 font-family: 'PT Sans Narrow', sans-serif;
 font-family: 'Quintessential', cursive;

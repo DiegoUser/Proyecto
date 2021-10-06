@@ -56,7 +56,7 @@
                 </tr>
                 ";
                     if (empty($origen)) {
-                        include "conexion.php";
+                        include "conexion.inc";
                         $sql = "SELECT * FROM electro ORDER BY $orden";
                         $result = mysqli_query($conex, $sql);
                         include_once "ConsultaTabla.php";
