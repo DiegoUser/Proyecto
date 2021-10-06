@@ -52,6 +52,12 @@ body{
     font-family: 'Scheherazade New', serif;
     text-align: justify;
   }
+  /*Para mensajes de error*/
+  h5{
+    font-family: 'Bona Nova', serif;
+    font-size: 38px;
+    text-align: center;
+  }
   /*Botones de Menú Principal*/
   .botones{
     width: 100%;
@@ -119,14 +125,18 @@ body{
   width: 50%;
   margin-left: 25%;
 }
-/*div error*/
+/*fieldset error*/
 #error{
   background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+  width: 50%;
+  height: 200px;
+  font-style: italic;
 }
 /*boton error*/
 .error{
   background: rgb(225, 184, 148);
-  font-size: 15px;
+  font-size: 22px;
+  font-style: italic;
 }
 .filaPAR{
   font-family: 'PT Sans Narrow', sans-serif;

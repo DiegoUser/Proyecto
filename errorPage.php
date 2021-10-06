@@ -22,8 +22,8 @@
             <?php
             // capturar mensaje de error
             $mensaje = $_GET["MSG"];
-            echo "<h2>A T E N C I O N</h2>\n";
-            echo "<h2>$mensaje</h2>\n";
+            echo "<h5>A T E N C I O N</h5>\n";
+            echo "<h5>$mensaje</h5>\n";
             ?>
         </fieldset>
         <div id="BotonError">
