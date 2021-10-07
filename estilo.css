@@ -162,6 +162,7 @@ body{
 #tabla td{
   border: 2px solid rgb(255, 255, 255);
 }
+/*Fieldset Consultas*/
 #FldConsultas{
   background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
   border: 2px solid rgb( 255, 255, 255);
