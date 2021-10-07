@@ -23,7 +23,7 @@
                 <img src="/logo.png" width="300" height="300">
             </div>
             <div id="textoLogo">
-                <fieldset>
+                <fieldset id="fldINDEX">
                     <legend>Porque nos importas</legend>
                     <h2>Electro.Web es una empresa que <b>importa</b> y <b>distribuye</b> artículos y accesorios para el hogar.<br>
                     Debido al éxito del emprendimiento decidimos brindar un sitio Web para que nuestros clientes puedan consultar los 
