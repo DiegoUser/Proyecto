@@ -16,6 +16,8 @@
 /*Cuerpo Index*/
 .cuerpo{
     display: flex;
+    background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+    border-radius: 12px;
 }
 .cuerpoCatalogo{
   width: 100%;
