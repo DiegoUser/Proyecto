@@ -13,7 +13,6 @@
     <script type="text/javascript" src="script.js"></script>
     <title>Electro.Web</title>
 </head>
-
 <body>
     <!-- SECCION CONTENIDO -->
     <div class="contenedor">
@@ -29,8 +28,6 @@
         <div id="BotonError">
             <button type="button" class="error" onclick="window.location.href='catalogo.php'">Volver al Inicio</button>
         </div>
-
     </div>
 </body>
-
 </html>

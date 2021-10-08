@@ -18,7 +18,7 @@ if (mysqli_num_rows($result) == 0) {
     $descripcion = utf8_encode($regELEC["desELEC"]);
     $origen      = utf8_encode($regELEC["orgELEC"]);
     $precio      = $regELEC["prcELEC"];
-} // endif
+}
 // cerrar conexión
 mysqli_close($conex);
 ?>
@@ -37,7 +37,6 @@ mysqli_close($conex);
     <script type="text/javascript" src="script.js"></script>
     <title>Electro.Web</title>
 </head>
-
 <body>
     <?php include "botones.inc" ?>
     <div id="contenido">
@@ -101,5 +100,4 @@ mysqli_close($conex);
         </fieldset>
     </div>
 </body>
-
 </html>

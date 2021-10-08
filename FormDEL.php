@@ -13,7 +13,6 @@
     <script type="text/javascript" src="script.js"></script>
     <title>Electro.Web</title>
 </head>
-
 <body>
     <div class="contenedor">
         <?php include "botones.inc" ?>
@@ -68,5 +67,4 @@
         </div>
     </div>
 </body>
-
 </html>

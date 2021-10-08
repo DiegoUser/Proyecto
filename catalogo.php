@@ -13,7 +13,6 @@
     <script type="text/javascript" src="script.js"></script>
     <title>Electro.Web</title>
 </head>
-
 <body>
     <div class="contenedor">
         <?php include "botones.inc" ?>
@@ -28,7 +27,9 @@
                                 <h4>Descripción:</h4>
                             </td>
                             <td>
-                                <input id="dataDES" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" type="text" name="DES" maxlenght="50" title="Máximo 50 carácteres" />
+                                <input id="dataDES" style="text-transform:uppercase;" 
+                                onkeyup="javascript:this.value=this.value.toUpperCase();" 
+                                type="text" name="DES" maxlenght="50" title="Máximo 50 carácteres" />
                             </td>
                         </tr>
                         <tr>
@@ -36,7 +37,9 @@
                                 <h4>Origen:</h4>
                             </td>
                             <td>
-                                <input id="dataORG" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" type="text" name="ORG" maxlenght="10" title="Máximo 10 carácteres" />
+                                <input id="dataORG" style="text-transform:uppercase;" 
+                                onkeyup="javascript:this.value=this.value.toUpperCase();" 
+                                type="text" name="ORG" maxlenght="10" title="Máximo 10 carácteres" />
                             </td>
                         </tr>
                         <tr>
@@ -59,5 +62,4 @@
         </div>
     </div>
 </body>
-
 </html>

@@ -13,7 +13,6 @@
     <script type="text/javascript" src="script.js"></script>
     <title>Electro.Web</title>
 </head>
-
 <body>
     <!-- SECCION CONTENIDO -->
     <div class="contenedor">
@@ -29,7 +28,8 @@
                     } else {
                         // asignar filtro desde el listado
                         $origen = $_GET["ORG"];
-                    } // endif
+                    }
+
                     // determinar orden del listado
                     if (isset($_GET["ORD"])) {
                         // obtener orden especificado
@@ -37,7 +37,8 @@
                     } else {
                         // establecer orden por defecto
                         $orden = "idELEC";
-                    } // endif
+                    } 
+
                     // determinar filtro
                     echo "
                 <tr>
@@ -61,6 +62,7 @@
                         $result = mysqli_query($conex, $sql);
                         include_once "ConsultaTabla.php";
                     }
+
                     if (!empty($origen)) {
                         include "conexion.inc";
                         $sql = "SELECT * FROM electro WHERE orgELEC LIKE '%$origen%' ORDER BY $orden";
@@ -81,5 +83,4 @@
                     </fieldset>
         </div>
 </body>
-
 </html>

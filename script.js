@@ -1,11 +1,12 @@
 function CheckForm(funcionalidad) {
   // preperar mensaje y control de error
-  var mensaje = "ATENCION!!!... Ingrese:\n";
-  var error = false;
+  let mensaje = "ATENCION!!!... Ingrese:\n";
+  let error = false;
   // capturar datos del formulario
-  var descripcion = document.getElementById("dataDES").value;
-  var origen = document.getElementById("dataORG").value;
-  var precio = document.getElementById("dataPRC").value;
+  let descripcion = document.getElementById("dataDES").value;
+  let origen = document.getElementById("dataORG").value;
+  let precio = document.getElementById("dataPRC").value;
+  
   // validar datos
   if (descripcion == "") {
     error = true;
@@ -47,10 +48,10 @@ function CheckForm(funcionalidad) {
 
 function CheckID() {
   // preperar mensaje y control de error
-  var mensaje = "ATENCION!!!... Ingrese:\n";
-  var error = false;
+  let mensaje = "ATENCION!!!... Ingrese:\n";
+  let error = false;
   // capturar datos del formulario
-  var id = document.getElementById("dataID").value;
+  let id = document.getElementById("dataID").value;
   // validar datos
   if (id == "") {
     error = true;
@@ -77,7 +78,7 @@ function SetPage(url) {
 
 function ConfirmDEL() {
   // muestra ventana de confirmación
-  var confirma = window.confirm("Confirme si desea eliminar el registro");
+  let confirma = window.confirm("Confirme si desea eliminar el registro");
   if (confirma) {
     // enviar formulario
     document.getElementById("dataFRM").submit();
@@ -88,7 +89,7 @@ function ConfirmDEL() {
 } // end function
 function ConfirmMOD() {
   // muestra ventana de confirmación
-  var confirma = window.confirm("Confirme si desea modificar el registro");
+  let confirma = window.confirm("Confirme si desea modificar el registro");
   if (confirma) {
     // enviar formulario
     document.getElementById("dataFRM").submit();
@@ -100,10 +101,10 @@ function ConfirmMOD() {
 
 function Filtro() {
   // preperar mensaje y control de error
-  var mensaje = "ATENCION!!!... Ingrese:\n";
-  var error = false;
+  let mensaje = "ATENCION!!!... Ingrese:\n";
+  let error = false;
   // capturar datos del formulario
-  var origen = document.getElementById("dataORG").value;
+  let origen = document.getElementById("dataORG").value;
   // validar datos
   if (origen !== "USA" && origen !== "CHINA" && origen !== "INDIA"&& origen !== "") {
     error = true;
