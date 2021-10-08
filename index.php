@@ -20,7 +20,7 @@
         </div>
         <div class="cuerpo">
             <div class="logo">
-                <img src="/logo.png" width="300" height="300">
+                <img src="./logo.png" width="300" height="300">
             </div>
             <div id="textoLogo">
                 <fieldset id="fldINDEX">
