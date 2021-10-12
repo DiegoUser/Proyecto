@@ -1,5 +1,5 @@
 <?php
-    include "conexion.inc";
+    include "../conexion.inc";
     // capturar datos del formulario
     $descripcion = utf8_decode($_POST["DES"]);
     $origen      = strtoupper($_POST["ORG"]);

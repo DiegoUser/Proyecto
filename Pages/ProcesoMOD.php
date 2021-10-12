@@ -1,5 +1,5 @@
 <?php
-    include "conexion.inc";
+    include "../conexion.inc";
     $id          = $_POST["ID"];
     $descripcion = utf8_decode($_POST["DES"]);
     $origen      = strtoupper($_POST["ORG"]);

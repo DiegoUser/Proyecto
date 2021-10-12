@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="../Style/estilo.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=PT+Sans+Narrow&family=Quintessential&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="../Script/script.js"></script>
     <title>Electro.Web</title>
 </head>
 
 <body>
     <!-- SECCION CONTENIDO -->
     <div class="contenedor">
-        <?php include "botones.inc" ?>
+        <?php include "../botones.inc" ?>
         <div id="Filtrado">
             <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
                 <table id="TablaConsultas">
@@ -44,28 +44,28 @@
                     echo "
                 <tr>
                     <th>
-                        <a href='ProcesoFiltro.php?ORD=idELEC&ORG=$origen'>ID</a>
+                        <a href='/ProcesoFiltro.php?ORD=idELEC&ORG=$origen'>ID</a>
                     </th>
                     <th>
-                    <a href='ProcesoFiltro.php?ORD=desELEC&ORG=$origen'>Descripcion</a>
+                        <a href='/ProcesoFiltro.php?ORD=desELEC&ORG=$origen'>Descripcion</a>
                     </th>
                     <th>
-                    <a href='ProcesoFiltro.php?ORD=orgELEC&ORG=$origen'>Origen</a>
+                        <a href='/ProcesoFiltro.php?ORD=orgELEC&ORG=$origen'>Origen</a>
                     </th>
                     <th>
-                    <a href='ProcesoFiltro.php?ORD=prcELEC&ORG=$origen'>Precio</a>
+                        <a href='/ProcesoFiltro.php?ORD=prcELEC&ORG=$origen'>Precio</a>
                     </th>
                 </tr>
                 ";
                     if (empty($origen)) {
-                        include "conexion.inc";
+                        include "../conexion.inc";
                         $sql = "SELECT * FROM electro ORDER BY $orden";
                         $result = mysqli_query($conex, $sql);
                         include_once "ConsultaTabla.php";
                     }
 
                     if (!empty($origen)) {
-                        include "conexion.inc";
+                        include "../conexion.inc";
                         $sql = "SELECT * FROM electro WHERE orgELEC LIKE '%$origen%' ORDER BY $orden";
                         $result = mysqli_query($conex, $sql);
                         if (mysqli_num_rows($result) == 0) {
@@ -75,7 +75,7 @@
                             <td>Registro</td>
                     <?php
                             mysqli_close($conex);
-                            header("refresh:3 url=http://127.0.0.1/Proyecto/consultas.php");
+                            header("refresh:3 url=http://127.0.0.1/Proyecto/Pages/consultas.php");
                         } else {
                             include_once "ConsultaTabla.php";
                         }

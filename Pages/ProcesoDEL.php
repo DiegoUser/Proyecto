@@ -1,5 +1,5 @@
 <?php
-    include "conexion.inc";
+    include "../conexion.inc";
     // capturar datos del formulario
     $id = $_POST["ID"];
     // crear sentencia SQL para eliminar registro físicamente
