@@ -18,7 +18,7 @@
     <!-- SECCION CONTENIDO -->
     <div class="contenedor">
         <?php include "botones.inc" ?>
-        <div id="Filtro">
+        <div id="Filtrado">
             <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
                 <table id="TablaConsultas">
                     <?php

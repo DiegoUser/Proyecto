@@ -150,6 +150,7 @@ input {
   background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
   width: 50%;
   margin-left: 25%;
+  border: 2px solid rgba(8, 110, 42, 0.336);
 }
 
 /*fieldset error*/
@@ -158,6 +159,7 @@ input {
   width: 50%;
   height: 200px;
   font-style: italic;
+  border: 2px solid rgba(8, 110, 42, 0.336);
 }
 
 /*boton error*/
@@ -199,14 +201,20 @@ input {
 /*Fieldset Consultas*/
 #FldConsultas {
   background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgba(8, 110, 42, 0.336);
 }
 
 /*Formulario para filtrar*/
 #Filtro {
-  background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
   margin-top: 10px;
   font-size: 24px;
+}
+
+#Filtrado{
+  margin-top: 10px;
+  font-size: 24px;
+  background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+  border: 2px solid rgba(8, 110, 42, 0.336);
 }
 
 a:link {
