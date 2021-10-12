@@ -13,6 +13,7 @@
     <script type="text/javascript" src="script.js"></script>
     <title>Electro.Web</title>
 </head>
+
 <body>
     <!-- SECCION CONTENIDO -->
     <div class="contenedor">
@@ -37,7 +38,7 @@
                     } else {
                         // establecer orden por defecto
                         $orden = "idELEC";
-                    } 
+                    }
 
                     // determinar filtro
                     echo "
@@ -82,5 +83,9 @@
                     ?>
                     </fieldset>
         </div>
+        <div>
+            <button type="button" class="" onclick="window.location.href='consultas.php'">Volver</button>
+        </div>
 </body>
+
 </html>
