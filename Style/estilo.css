@@ -115,6 +115,14 @@ button {
   font-size: 18px;
   font-family: 'Scheherazade New', serif;
 }
+.BotonVolver{
+  background: #fdcae1;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-family: 'Scheherazade New', serif;
+  margin-top: 10px;
+}
 
 /*Botones para Insertar, Eliminar y Modificar*/
 #BotonesAcciones {

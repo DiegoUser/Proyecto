@@ -84,7 +84,7 @@
                     </fieldset>
         </div>
         <div>
-            <button type="button" class="" onclick="window.location.href='consultas.php'">Volver</button>
+            <button type="button" class="BotonVolver" onclick="window.location.href='consultas.php'">Volver</button>
         </div>
 </body>
 
