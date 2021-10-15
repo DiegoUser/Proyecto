@@ -40,6 +40,9 @@
                 </form>
             </fieldset>
         </div>
+        <div class="info">
+            <p><strong>Info!</strong> Si desea visualizar todos los registros, deje el filtro vacío</p>
+        </div>
     </div>
 </body>
 
