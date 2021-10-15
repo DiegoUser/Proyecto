@@ -44,16 +44,16 @@
                     echo "
                 <tr>
                     <th>
-                        <a href='/ProcesoFiltro.php?ORD=idELEC&ORG=$origen'>ID</a>
+                        <a href='./ProcesoFiltro.php?ORD=idELEC&ORG=$origen'>ID</a>
                     </th>
                     <th>
-                        <a href='/ProcesoFiltro.php?ORD=desELEC&ORG=$origen'>Descripcion</a>
+                        <a href='./ProcesoFiltro.php?ORD=desELEC&ORG=$origen'>Descripcion</a>
                     </th>
                     <th>
-                        <a href='/ProcesoFiltro.php?ORD=orgELEC&ORG=$origen'>Origen</a>
+                        <a href='./ProcesoFiltro.php?ORD=orgELEC&ORG=$origen'>Origen</a>
                     </th>
                     <th>
-                        <a href='/ProcesoFiltro.php?ORD=prcELEC&ORG=$origen'>Precio</a>
+                        <a href='./ProcesoFiltro.php?ORD=prcELEC&ORG=$origen'>Precio</a>
                     </th>
                 </tr>
                 ";

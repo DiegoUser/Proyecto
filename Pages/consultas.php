@@ -33,7 +33,7 @@
                         <tr>
                             <td id="botonesformulario" colspan="2">
                                 <input type="button" class="BotonesFormulario" value="Buscar" onclick="Filtro();" />
-                                <input type="reset" class="BotonesFormulario" value="Cancelar" />
+                                <input type="reset"  class="BotonesFormulario" value="Cancelar" />
                             </td>
                         </tr>
                     </table>
