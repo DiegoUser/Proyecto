@@ -34,7 +34,7 @@
                         <tr>
                             <td id="botonesformulario" colspan="2">
                                 <input type="button" class="BotonesFormulario" value="Buscar" onclick="Filtro();" />
-                                <input type="reset" class="BotonesFormulario" value="Cancelar" />
+                                <input type="reset"  class="BotonesFormulario" value="Cancelar" />
                             </td>
                         </tr>
                     </table>
@@ -98,7 +98,7 @@
                             <td>Registro</td>
                     <?php
                             mysqli_close($conex);
-                            header("refresh:3 url=http://127.0.0.1/Proyecto/Pages/consultas.php");
+                            header("refresh:3 url=consultas.php");
                         } else {
                             include_once "ConsultaTabla.php";
                         }
