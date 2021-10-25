@@ -18,3 +18,5 @@ CREATE TABLE IF NOT EXISTS `electro` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 COMMIT;
 
+INSERT INTO electro (desELEC,orgELEC,prcELEC) VALUES ("Television", "CHINA", 15000),("Lavarropas", "CHINA", 15000),("Secarropas", "CHINA", 18000)
+,("Microondas", "USA", 12000),("Horno", "USA", 15000),("Heladera", "USA", 22000),("Batidora", "INDIA", 6000);
