@@ -5,7 +5,7 @@
     $origen      = strtoupper($_POST["ORG"]);
     $precio      = $_POST["PRC"];
     // crear sentencia SQL
-    $sql  = "INSERT INTO ELECTRO ";
+    $sql  = "INSERT INTO electro ";
     $sql .= "(idELEC,desELEC,orgELEC,prcELEC) ";
     $sql .= "VALUES ";
     $sql .= "(null,'$descripcion','$origen','$precio')";
