@@ -21,7 +21,7 @@
             <div id="contenido">
                 <fieldset id="fldFRM">
                     <legend>Eliminar</legend>
-                    <form id="dataFRM" action="/Pages/ProcesoConfirmDEL.php" method="POST">
+                    <form id="dataFRM" action="ProcesoConfirmDEL.php" method="POST">
                         <table id="tablaFRM">
                             <tr>
                                 <td><h4>ID:</h4></td>
