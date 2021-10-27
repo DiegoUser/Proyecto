@@ -108,7 +108,7 @@ function Filtro() {
   // validar datos
   if (origen !== "USA" && origen !== "CHINA" && origen !== "INDIA"&& origen !== "") {
     error = true;
-    mensaje = mensaje + "Origen habilitado:\n";
+    mensaje = mensaje + "origen habilitado\n";
   } //endif
   if (error) {
     // enviar mensaje
