@@ -4,33 +4,29 @@ function CheckForm(funcionalidad) {
   let error = false;
   // capturar datos del formulario
   let descripcion = document.getElementById("dataDES").value;
-  let origen = document.getElementById("dataORG").value;
-  let precio = document.getElementById("dataPRC").value;
+  let importe = document.getElementById("dataIMP").value;
+  let fecha = document.getElementById("dataFEC").value;
   
   // validar datos
   if (descripcion == "") {
     error = true;
     mensaje = mensaje + "Descripción:\n";
   } // endif
-  if (origen == "") {
+  if (fecha == "") {
     error = true;
-    mensaje = mensaje + "Origen:\n";
+    mensaje = mensaje + "Fecha:\n";
   } // endif
-  if (origen !== "USA" && origen !== "CHINA" && origen !== "INDIA") {
+  if (importe == "") {
     error = true;
-    mensaje = mensaje + "Origen habilitado:\n";
-  } //endif
-  if (precio == "") {
-    error = true;
-    mensaje = mensaje + "Precio:\n";
+    mensaje = mensaje + "Importe:\n";
   } // endif
-  if (precio == "0") {
+  if (importe == "0") {
     error = true;
-    mensaje = mensaje + "Precio no puede ser 0:\n";
+    mensaje = mensaje + "Importe no puede ser 0:\n";
   } // endif
-  if (isNaN(precio)) {
+  if (isNaN(importe)) {
     error = true;
-    mensaje = mensaje + "Precio debe ser numérico:\n";
+    mensaje = mensaje + "Importe debe ser numérico:\n";
   } // endif
   // control de error
   if (error) {
@@ -104,11 +100,11 @@ function Filtro() {
   let mensaje = "ATENCION!!!... Ingrese:\n";
   let error = false;
   // capturar datos del formulario
-  let origen = document.getElementById("dataORG").value;
+  let fecha = document.getElementById("dataFEC").value;
   // validar datos
-  if (origen !== "USA" && origen !== "CHINA" && origen !== "INDIA"&& origen !== "") {
+  if (fecha !== "") {
     error = true;
-    mensaje = mensaje + "origen habilitado\n";
+    mensaje = mensaje + "fecha \n";
   } //endif
   if (error) {
     // enviar mensaje
