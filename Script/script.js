@@ -102,10 +102,6 @@ function Filtro() {
   // capturar datos del formulario
   let fecha = document.getElementById("dataFEC").value;
   // validar datos
-  if (fecha !== "") {
-    error = true;
-    mensaje = mensaje + "fecha \n";
-  } //endif
   if (error) {
     // enviar mensaje
     window.alert(mensaje);

@@ -70,7 +70,7 @@ mysqli_close($conex);
                             <h4>Importe:</h4>
                         </td>
                         <td>
-                            <input id="dataORG" type="text" name="ORG" <?php
+                            <input id="dataIMP" type="text" name="IMP" <?php
                                                                         echo "value='$importe'";
                                                                         ?> />
                         </td>

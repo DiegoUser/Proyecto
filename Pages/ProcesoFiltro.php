@@ -38,7 +38,7 @@
                                 <h4>Fecha:</h4>
                             </td>
                             <td>
-                                <input id="dataFEC"  type="text" name="FEC" />
+                                <input id="dataFEC" type="text" name="FEC" />
                             </td>
                         </tr>
                         <tr>
@@ -77,16 +77,16 @@
                     echo "
                 <tr>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=idELEC&ORG=$fecha'>ID</a>
+                        <a href='./ProcesoFiltro.php?ORD=idGastos&FEC=$fecha'>ID</a>
                     </th>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=desELEC&ORG=$fecha'>Descripcion</a>
+                        <a href='./ProcesoFiltro.php?ORD=descripcionGastos&FEC=$fecha'>Descripcion</a>
                     </th>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=orgELEC&ORG=$fecha'>Importe</a>
+                        <a href='./ProcesoFiltro.php?ORD=importeGastos&FEC=$fecha'>Importe</a>
                     </th>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=prcELEC&ORG=$fecha'>Fecha</a>
+                        <a href='./ProcesoFiltro.php?ORD=fechaGastos&FEC=$fecha'>Fecha</a>
                     </th>
                 </tr>
                 ";
