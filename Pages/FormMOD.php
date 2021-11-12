@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/estilo.css"/>
+    <link rel="stylesheet" href="../Style/estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=PT+Sans+Narrow&family=Quintessential&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../Script/script.js"></script>
-    <title>Electro.Web</title>
+    <title>Gestón de Gastos</title>
 </head>
+
 <body>
     <div class="contenedor">
         <?php include "../botones.inc" ?>
@@ -41,24 +42,24 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <h4> Origen:</h4>
+                                    <h4> Importe:</h4>
                                 </td>
                                 <td>
-                                    <input id="dataORG" type="text" name="ORG" disabled="true" title="deshabilitado" value="deshabilitado" />
+                                    <input id="dataIMP" type="text" name="IMP" disabled="true" title="deshabilitado" value="deshabilitado" />
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <h4> Precio:</h4>
+                                    <h4> Fecha:</h4>
                                 </td>
                                 <td>
-                                    <input id="dataPRC" type="text" name="PRC" disabled="true" title="deshabilitado" value="deshabilitado" />
+                                    <input id="dataFEC" type="text" name="FEC" disabled="true" title="deshabilitado" value="deshabilitado" />
                                 </td>
                             </tr>
                             <tr>
                                 <td id="botonesformulario" colspan="2">
                                     <input type="button" class="BotonesFormulario" value="Confirmar" onclick="CheckID();" />
-                                    <input type="reset"  class="BotonesFormulario" name="Cancelar" />
+                                    <input type="reset" class="BotonesFormulario" name="Cancelar" />
                                 </td>
                             </tr>
                         </table>
@@ -66,4 +67,5 @@
                 </fieldset>
             </div>
 </body>
+
 </html>

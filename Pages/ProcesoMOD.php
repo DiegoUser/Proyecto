@@ -2,14 +2,14 @@
     include "../conexion.inc";
     $id          = $_POST["ID"];
     $descripcion = utf8_decode($_POST["DES"]);
-    $origen      = strtoupper($_POST["ORG"]);
-    $precio      = $_POST["PRC"];
+    $importe      = $_POST["IMP"];
+    $fecha      = $_POST["FEC"];
     // crear sentencia SQL para actualizar
-    $sql  = "UPDATE electro SET ";
-    $sql .= "desELEC='$descripcion',";
-    $sql .= "orgELEC='$origen',";
-    $sql .= "prcELEC='$precio'";
-    $sql .= "WHERE idELEC=$id";                
+    $sql  = "UPDATE gestion SET ";
+    $sql .= "descripcionGastos='$descripcion',";
+    $sql .= "importeGastos='$importe',";
+    $sql .= "fechaGastos='$fecha'";
+    $sql .= "WHERE idGastos=$id";                
     // ejecutar sentencia SQL
     mysqli_query($conex,$sql);
     // cerrar conexión
