@@ -53,7 +53,7 @@
                                     <h4> Fecha:</h4>
                                 </td>
                                 <td>
-                                    <input id="dataFEC" type="text" name="FEC" disabled="true" title="deshabilitado" value="deshabilitado" />
+                                    <input id="dataFEC" type="date" name="FEC" disabled="true" title="deshabilitado" value="deshabilitado" />
                                 </td>
                             </tr>
                             <tr>

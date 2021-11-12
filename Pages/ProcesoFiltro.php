@@ -38,7 +38,7 @@
                                 <h4>Fecha:</h4>
                             </td>
                             <td>
-                                <input id="dataFEC" type="text" name="FEC" />
+                                <input id="dataFEC" type="date" name="FEC" />
                             </td>
                         </tr>
                         <tr>

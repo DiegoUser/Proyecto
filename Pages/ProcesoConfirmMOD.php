@@ -80,7 +80,7 @@ mysqli_close($conex);
                             <h4>Fecha:</h4>
                         </td>
                         <td>
-                            <input id="dataFEC" type="text" name="FEC" <?php
+                            <input id="dataFEC" type="date" name="FEC" <?php
                                                                         echo "value='$fecha'";
                                                                         ?> />
                         </td>
