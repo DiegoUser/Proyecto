@@ -3,10 +3,10 @@
     // capturar datos del formulario
     $descripcion = utf8_decode($_POST["DES"]);
     $importe      = $_POST["IMP"];
-    $fecha      = $_POST("FEC");
+    $fecha      = $_POST["FEC"];
     // crear sentencia SQL
     $sql  = "INSERT INTO gestion ";
-    $sql .= "(idGastos,descripcionGasto,importeGastos,fechaGastos) ";
+    $sql .= "(idGastos,descripcionGastos,importeGastos,fechaGastos) ";
     $sql .= "VALUES ";
     $sql .= "(null,'$descripcion','$importe','$fecha')";
     // depurar SQL

@@ -53,7 +53,7 @@
                                     <h4>Fecha:</h4>
                                 </td>
                                 <td>
-                                    <input id="dataFEC" type="text" name="FEC" maxlenght="50" title="Máximo 50 carácteres" disabled="true" value="deshabilitado" />
+                                    <input id="dataFEC" type="text" name="FEC" disabled="true" value="deshabilitado" />
                                 </td>
                             </tr>
                             <!-- botones del formulario -->
