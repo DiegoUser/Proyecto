@@ -34,10 +34,10 @@
                     <table id="TablaConsultas">
                         <tr>
                             <td>
-                                <h4>Fecha:</h4>
+                                <h4>Descripcion:</h4>
                             </td>
                             <td>
-                                <input id="dataFEC" type="date" name="FEC" />
+                                <input id="dataDES" type="name" name="DES" />
                             </td>
                         </tr>
                         <tr>

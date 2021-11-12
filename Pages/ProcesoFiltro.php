@@ -35,10 +35,10 @@
                     <table id="TablaConsultas">
                         <tr>
                             <td>
-                                <h4>Fecha:</h4>
+                                <h4>Descripcion:</h4>
                             </td>
                             <td>
-                                <input id="dataFEC" type="date" name="FEC" />
+                                <input id="dataDES" type="text" name="DES" />
                             </td>
                         </tr>
                         <tr>
@@ -56,12 +56,12 @@
                 <table id="TablaConsultas">
                     <?php
                     // determinar filtro del listado
-                    if (isset($_POST["FEC"])) {
+                    if (isset($_POST["DES"])) {
                         // asignar filtro especificado en el formulario
-                        $fecha = $_POST["FEC"];
+                        $descripcion = $_POST["DES"];
                     } else {
                         // asignar filtro desde el listado
-                        $fecha = $_GET["FEC"];
+                        $descripcion = $_GET["DES"];
                     }
 
                     // determinar orden del listado
@@ -77,29 +77,29 @@
                     echo "
                 <tr>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=idGastos&FEC=$fecha'>ID</a>
+                        <a href='./ProcesoFiltro.php?ORD=idGastos&DES=$descripcion'>ID</a>
                     </th>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=descripcionGastos&FEC=$fecha'>Descripcion</a>
+                        <a href='./ProcesoFiltro.php?ORD=descripcionGastos&DES=$descripcion'>Descripcion</a>
                     </th>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=importeGastos&FEC=$fecha'>Importe</a>
+                        <a href='./ProcesoFiltro.php?ORD=importeGastos&DES=$descripcion'>Importe</a>
                     </th>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=fechaGastos&FEC=$fecha'>Fecha</a>
+                        <a href='./ProcesoFiltro.php?ORD=fechaGastos&DES=$descripcion'>Fecha</a>
                     </th>
                 </tr>
                 ";
-                    if (empty($fecha)) {
+                    if (empty($descripcion)) {
                         include "../conexion.inc";
-                        $sql = "SELECT * FROM gestion ORDER BY $fecha";
+                        $sql = "SELECT * FROM gestion ORDER BY $orden";
                         $result = mysqli_query($conex, $sql);
                         include_once "ConsultaTabla.php";
                     }
 
-                    if (!empty($fecha)) {
+                    if (!empty($descripcion)) {
                         include "../conexion.inc";
-                        $sql = "SELECT * FROM gestion WHERE fechaGastos LIKE '%$fecha%' ORDER BY $orden";
+                        $sql = "SELECT * FROM gestion WHERE descripcionGastos LIKE '%$descripcion%' ORDER BY $orden";
                         $result = mysqli_query($conex, $sql);
                         if (mysqli_num_rows($result) == 0) {
                     ?>

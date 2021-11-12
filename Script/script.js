@@ -100,7 +100,7 @@ function Filtro() {
   let mensaje = "ATENCION!!!... Ingrese:\n";
   let error = false;
   // capturar datos del formulario
-  let fecha = document.getElementById("dataFEC").value;
+  let descripcion = document.getElementById("dataDES").value;
   // validar datos
   if (error) {
     // enviar mensaje
