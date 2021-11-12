@@ -3,7 +3,7 @@
     // capturar datos del formulario
     $id = $_POST["ID"];
     // crear sentencia SQL para eliminar registro físicamente
-    $sql  = "DELETE FROM electro WHERE idELEC=$id ";
+    $sql  = "DELETE FROM gestion WHERE idGastos =$id ";
     // ejecutar sentencia SQL
     mysqli_query($conex,$sql);
     // cerrar conexión

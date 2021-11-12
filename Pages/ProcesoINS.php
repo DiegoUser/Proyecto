@@ -2,13 +2,13 @@
     include "../conexion.inc";
     // capturar datos del formulario
     $descripcion = utf8_decode($_POST["DES"]);
-    $origen      = strtoupper($_POST["ORG"]);
-    $precio      = $_POST["PRC"];
+    $importe      = $_POST["IMP"];
+    $fecha      = $_POST("FEC");
     // crear sentencia SQL
-    $sql  = "INSERT INTO electro ";
-    $sql .= "(idELEC,desELEC,orgELEC,prcELEC) ";
+    $sql  = "INSERT INTO gestion ";
+    $sql .= "(idGastos,descripcionGasto,importeGastos,fechaGastos) ";
     $sql .= "VALUES ";
-    $sql .= "(null,'$descripcion','$origen','$precio')";
+    $sql .= "(null,'$descripcion','$importe','$fecha')";
     // depurar SQL
     // die($sql);
     // ejecutar sentencia SQL
@@ -17,4 +17,3 @@
     mysqli_close($conex);
     // volver al forumulario automáticamente
     header("Location: catalogo.php");
-?>

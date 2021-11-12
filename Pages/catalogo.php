@@ -44,7 +44,7 @@
                                 <h4>Fecha:</h4>
                             </td>
                             <td>
-                                <input id="dataORG" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" type="text" name="ORG" maxlenght="10" title="Máximo 10 carácteres" />
+                                <input id="dataFEC" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" type="text" name="FEC" maxlenght="50" title="Máximo 50 carácteres" />
                             </td>
                         </tr>
                         <tr>
