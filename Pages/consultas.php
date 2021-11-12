@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/estilo.css"/>
+    <link rel="stylesheet" href="../Style/estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=PT+Sans+Narrow&family=Quintessential&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../Script/script.js"></script>
     <script type="text/javascript">
-        window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.keyIdentifier=='Enter'||e.keyCode==13){if(e.target.nodeName=='INPUT'&&e.target.type=='text'){e.preventDefault();return false;}}},true);
+        window.addEventListener('keydown', function(e) {
+            if (e.keyIdentifier == 'U+000A' || e.keyIdentifier == 'Enter' || e.keyCode == 13) {
+                if (e.target.nodeName == 'INPUT' && e.target.type == 'text') {
+                    e.preventDefault();
+                    return false;
+                }
+            }
+        }, true);
     </script>
-    <title>Electro.Web</title>
+    <title>Gestión de Gastos</title>
 </head>
 
 <body>
@@ -27,16 +34,16 @@
                     <table id="TablaConsultas">
                         <tr>
                             <td>
-                                <h4>Origen:</h4>
+                                <h4>Fecha:</h4>
                             </td>
                             <td>
-                                <input id="dataORG" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" type="text" name="ORG" maxlenght="10" title="USA/CHINA/INDIA" />
+                                <input id="dataFEC" type="text" name="FEC" />
                             </td>
                         </tr>
                         <tr>
                             <td id="botonesformulario" colspan="2">
                                 <input type="button" class="BotonesFormulario" value="Buscar" onclick="Filtro();" />
-                                <input type="reset"  class="BotonesFormulario" value="Cancelar" />
+                                <input type="reset" class="BotonesFormulario" value="Cancelar" />
                             </td>
                         </tr>
                     </table>

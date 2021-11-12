@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=PT+Sans+Narrow&family=Quintessential&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../Script/script.js"></script>
-    <title>Gestón de Gastos</title>
+    <title>Gestión de Gastos</title>
 </head>
 
 <body>

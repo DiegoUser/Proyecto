@@ -12,9 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=PT+Sans+Narrow&family=Quintessential&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../Script/script.js"></script>
     <script type="text/javascript">
-        window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.keyIdentifier=='Enter'||e.keyCode==13){if(e.target.nodeName=='INPUT'&&e.target.type=='text'){e.preventDefault();return false;}}},true);
+        window.addEventListener('keydown', function(e) {
+            if (e.keyIdentifier == 'U+000A' || e.keyIdentifier == 'Enter' || e.keyCode == 13) {
+                if (e.target.nodeName == 'INPUT' && e.target.type == 'text') {
+                    e.preventDefault();
+                    return false;
+                }
+            }
+        }, true);
     </script>
-    <title>Electro.Web</title>
+    <title>Gestión de Gastos</title>
 </head>
 
 <body>
@@ -28,16 +35,16 @@
                     <table id="TablaConsultas">
                         <tr>
                             <td>
-                                <h4>Origen:</h4>
+                                <h4>Fecha:</h4>
                             </td>
                             <td>
-                                <input id="dataORG" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" type="text" name="ORG" maxlenght="10" title="USA/CHINA/INDIA" />
+                                <input id="dataFEC"  type="text" name="FEC" />
                             </td>
                         </tr>
                         <tr>
                             <td id="botonesformulario" colspan="2">
                                 <input type="button" class="BotonesFormulario" value="Buscar" onclick="Filtro();" />
-                                <input type="reset"  class="BotonesFormulario" value="Cancelar" />
+                                <input type="reset" class="BotonesFormulario" value="Cancelar" />
                             </td>
                         </tr>
                     </table>
@@ -49,12 +56,12 @@
                 <table id="TablaConsultas">
                     <?php
                     // determinar filtro del listado
-                    if (isset($_POST["ORG"])) {
+                    if (isset($_POST["FEC"])) {
                         // asignar filtro especificado en el formulario
-                        $origen = $_POST["ORG"];
+                        $fecha = $_POST["FEC"];
                     } else {
                         // asignar filtro desde el listado
-                        $origen = $_GET["ORG"];
+                        $fecha = $_GET["FEC"];
                     }
 
                     // determinar orden del listado
@@ -63,36 +70,36 @@
                         $orden = $_GET["ORD"];
                     } else {
                         // establecer orden por defecto
-                        $orden = "idELEC";
+                        $orden = "idGastos";
                     }
 
                     // determinar filtro
                     echo "
                 <tr>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=idELEC&ORG=$origen'>ID</a>
+                        <a href='./ProcesoFiltro.php?ORD=idELEC&ORG=$fecha'>ID</a>
                     </th>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=desELEC&ORG=$origen'>Descripcion</a>
+                        <a href='./ProcesoFiltro.php?ORD=desELEC&ORG=$fecha'>Descripcion</a>
                     </th>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=orgELEC&ORG=$origen'>Origen</a>
+                        <a href='./ProcesoFiltro.php?ORD=orgELEC&ORG=$fecha'>Importe</a>
                     </th>
                     <th>
-                        <a href='./ProcesoFiltro.php?ORD=prcELEC&ORG=$origen'>Precio</a>
+                        <a href='./ProcesoFiltro.php?ORD=prcELEC&ORG=$fecha'>Fecha</a>
                     </th>
                 </tr>
                 ";
-                    if (empty($origen)) {
+                    if (empty($fecha)) {
                         include "../conexion.inc";
-                        $sql = "SELECT * FROM electro ORDER BY $orden";
+                        $sql = "SELECT * FROM gestion ORDER BY $fecha";
                         $result = mysqli_query($conex, $sql);
                         include_once "ConsultaTabla.php";
                     }
 
-                    if (!empty($origen)) {
+                    if (!empty($fecha)) {
                         include "../conexion.inc";
-                        $sql = "SELECT * FROM electro WHERE orgELEC LIKE '%$origen%' ORDER BY $orden";
+                        $sql = "SELECT * FROM gestion WHERE fechaGastos LIKE '%$fecha%' ORDER BY $orden";
                         $result = mysqli_query($conex, $sql);
                         if (mysqli_num_rows($result) == 0) {
                     ?>

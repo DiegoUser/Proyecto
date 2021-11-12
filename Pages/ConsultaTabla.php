@@ -1,10 +1,10 @@
 <?php
 $fila = 1;
-while ($regELEC     = mysqli_fetch_array($result)) {
-    $id             = $regELEC["idELEC"];
-    $descripcion    = $regELEC["desELEC"];
-    $origen         = $regELEC["orgELEC"];
-    $precio         = $regELEC["prcELEC"];
+while ($regGastos    = mysqli_fetch_array($result)) {
+    $id             = $regGastos["idGastos"];
+    $descripcion    = $regGastos["descripcionGastos"];
+    $importe         = $regGastos["importeGastos"];
+    $fecha         = $regGastos["fechaGastos"];
     $resto = $fila % 2;
     if ($resto == 0) {
         echo "<tr class='filaPAR'>\n";
@@ -13,8 +13,8 @@ while ($regELEC     = mysqli_fetch_array($result)) {
     }
     echo " <td>$id</td>\n";
     echo " <td>$descripcion</td>\n";
-    echo " <td>$origen</td>\n";
-    echo " <td>$precio</td>\n";
+    echo " <td>$importe</td>\n";
+    echo " <td>$fecha</td>\n";
     echo "<tr>\n";
     $fila++;
 }
