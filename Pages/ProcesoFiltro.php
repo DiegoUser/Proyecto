@@ -108,8 +108,9 @@
                             <td>Existe</td>
                             <td>Registro</td>
                     <?php
+                            $total = 0;
                             mysqli_close($conex);
-                            header("refresh:3 url=consultas.php");
+                            header("refresh: url=consultas.php");
                         } else {
                             include_once "ConsultaTabla.php";
                         }
@@ -119,9 +120,10 @@
                         <button class="botonTotal" type="button" onclick="SetBox('total')"><strong>Mostrar Total</strong></button>
                         <div id="total">
                             <?php
-                            echo $total;
+                            if ($total !== 0) {
+                                echo $total;
+                            }
                             ?>
-
                         </div>
                     </div>
             </form>
