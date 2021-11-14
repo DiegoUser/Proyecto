@@ -31,7 +31,7 @@
             <fieldset id="FldConsultas">
                 <legend>Filtro</legend>
                 <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
-                    <table id="TablaConsultas">
+                    <table>
                         <tr>
                             <td>
                                 <h4>Descripcion:</h4>

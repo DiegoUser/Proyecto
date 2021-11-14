@@ -32,7 +32,7 @@
             <fieldset id="FldConsultas">
                 <legend>Filtro</legend>
                 <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
-                    <table id="TablaConsultas">
+                    <table>
                         <tr>
                             <td>
                                 <h4>Descripcion:</h4>
@@ -114,13 +114,14 @@
                         }
                     }
                     ?>
+                    <div class="tableFooter">
+                        <button class="botonTotal" type="button" onclick="SetBox('total')"><strong>Mostrar Total</strong></button>
+                        <div id="total">
+                            <?php
+                            echo $total;
+                            ?>
 
-                    <button class="botonTotal" type="button" onclick="SetBox('total')"><strong>Mostrar Total</strong></button>
-                    <div id="total">
-                        <?php
-                        echo $total;
-                        ?>
-
+                        </div>
                     </div>
             </form>
         </div>
