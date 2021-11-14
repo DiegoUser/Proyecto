@@ -140,13 +140,13 @@ button {
 
 /*Botones para Insertar, Eliminar y Modificar*/
 .BotonesAcciones {
-  background: #fdcae1;
+  background: #ff00734b;
   font-size: 18px;
   font-family: 'Scheherazade New', serif;
 }
 
 .BotonVolver {
-  background: #fdcae1;
+  background: #ff00734b;
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 18px;
@@ -179,7 +179,7 @@ input {
 
 /*Botones de enviar y cancelar*/
 .BotonesFormulario {
-  background: #fdcae1;
+  background: #ff00734b;
   padding: 5px;
   cursor: pointer;
 }
@@ -188,11 +188,15 @@ input {
   display: flex;
   width: 50%;
 }
-
+.errorField{
+  display: flex;
+  left: 25%;
+}
 /*boton error*/
 .error {
   display: flex;
   left: 25%;
+  background: #ff00734b;
 }
 
 .filaPAR {

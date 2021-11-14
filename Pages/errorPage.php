@@ -17,7 +17,7 @@
 <body>
     <!-- SECCION CONTENIDO -->
     <div class="contenedor">
-        <fieldset class="error">
+        <fieldset class="errorField">
             <legend>E R R O R</legend>
             <?php
             // capturar mensaje de error
