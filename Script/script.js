@@ -6,7 +6,7 @@ function CheckForm(funcionalidad) {
   let descripcion = document.getElementById("dataDES").value;
   let importe = document.getElementById("dataIMP").value;
   let fecha = document.getElementById("dataFEC").value;
-  
+
   // validar datos
   if (descripcion == "") {
     error = true;
@@ -36,7 +36,7 @@ function CheckForm(funcionalidad) {
     ConfirmDEL();
   } else if (funcionalidad == "Modificar") {
     ConfirmMOD();
-  } else if (funcionalidad == 'Insertar') {
+  } else if (funcionalidad == "Insertar") {
     // enviar formulario
     document.getElementById("dataFRM").submit();
   } //endif
@@ -107,5 +107,14 @@ function Filtro() {
     window.alert(mensaje);
   } else {
     document.getElementById("dataFRM").submit();
-  }//endif
+  } //endif
 } // end function
+
+function SetBox(idBox) {
+  var estado = document.getElementById(idBox).style.display;
+  if (estado == "inline-table") {
+    document.getElementById(idBox).style.display = "none";
+  } else {
+    document.getElementById(idBox).style.display = "inline-table";
+  }
+}

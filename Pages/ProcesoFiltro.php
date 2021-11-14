@@ -114,7 +114,14 @@
                         }
                     }
                     ?>
-                </table>
+
+                    <button class="botonTotal" type="button" onclick="SetBox('total')"><strong>Mostrar Total</strong></button>
+                    <div id="total">
+                        <?php
+                        echo $total;
+                        ?>
+
+                    </div>
             </form>
         </div>
 </body>

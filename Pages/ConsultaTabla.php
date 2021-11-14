@@ -1,5 +1,6 @@
 <?php
 $fila = 1;
+$total = 0;
 while ($regGastos   = mysqli_fetch_array($result)) {
     $id             = $regGastos["idGastos"];
     $descripcion    = $regGastos["descripcionGastos"];
@@ -16,6 +17,7 @@ while ($regGastos   = mysqli_fetch_array($result)) {
     echo " <td>$importe</td>\n";
     echo " <td>$fecha</td>\n";
     echo "<tr>\n";
+    $total=$total+$importe;
     $fila++;
 }
 mysqli_close($conex);
