@@ -29,7 +29,7 @@
             <button type="button" class="error" onclick="window.location.href='catalogo.php'">Volver al Inicio</button>
         </div>
         <?php
-        header("refresh: url=catalogo.php");
+        header("refresh:3 url=catalogo.php");
         ?>
     </div>
 </body>
