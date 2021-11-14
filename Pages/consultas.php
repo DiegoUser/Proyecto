@@ -27,11 +27,12 @@
 <body>
     <div class="contenedor">
         <?php include "../botones.inc" ?>
-        <div id="Filtro">
-            <fieldset id="FldConsultas">
+        <div class="Filtro">
+            <fieldset>
                 <legend>Filtro</legend>
                 <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
                     <table>
+                    <tbody>
                         <tr>
                             <td>
                                 <h4>Descripcion:</h4>
@@ -46,6 +47,7 @@
                                 <input type="reset" class="BotonesFormulario" value="Cancelar" />
                             </td>
                         </tr>
+                        </tbody>
                     </table>
                 </form>
             </fieldset>

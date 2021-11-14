@@ -6,7 +6,21 @@
   justify-content: center;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
 .contenedor {
+  top:25%;
+  left: 25%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -15,24 +29,43 @@
   margin: auto;
 }
 
-/*Cuerpo Index*/
-.cuerpo {
-  display: flex;
-  background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
-  border-radius: 12px;
+table {
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.cuerpoCatalogo {
-  width: 100%;
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
 }
 
-body {
-  background-repeat: repeat;
-  background-image: url(../Resources/mosaico.gif);
-  background-size: 100%;
+thead th {
+  background-color: #55608f;
 }
 
-/*Logo Index*/
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody td {
+  position: relative;
+}
+
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
 .logo {
   margin-top: 2.5%;
   margin-left: 5%;
@@ -45,8 +78,9 @@ body {
 
 #fldINDEX {
   padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
 }
-
 legend {
   font-family: 'Birthstone', cursive;
   font-size: 32px;
@@ -95,23 +129,18 @@ button {
   margin-bottom: 5px;
   margin-left: 20px;
   padding: 5px;
-  background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
   cursor: pointer;
 }
 
 #tablaFRM {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 20px;
-  border-radius: 10px;
-  padding: 2px;
   width: 100%;
 }
 
 /*Botones para Insertar, Eliminar y Modificar*/
 .BotonesAcciones {
   background: #fdcae1;
-  margin-top: 0px;
-  margin-bottom: 0px;
   font-size: 18px;
   font-family: 'Scheherazade New', serif;
 }
@@ -155,27 +184,15 @@ input {
   cursor: pointer;
 }
 
-#fldFRM {
-  background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+.Filtro {
+  display: flex;
   width: 50%;
-  margin-left: 25%;
-  border: 2px solid rgba(8, 110, 42, 0.336);
-}
-
-/*fieldset error*/
-#error {
-  background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
-  width: 50%;
-  height: 200px;
-  font-style: italic;
-  border: 2px solid rgba(8, 110, 42, 0.336);
 }
 
 /*boton error*/
 .error {
-  background: #fdcae1;
-  font-size: 22px;
-  font-style: italic;
+  display: flex;
+  left: 25%;
 }
 
 .filaPAR {
@@ -188,43 +205,9 @@ input {
   font-size: 20px;
 }
 
-/*Tabla Consultas*/
-#tabla {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-  text-align: left;
-  border: 2px solid rgb(255, 255, 255);
-}
-
-#tabla th {
-  font-size: 30px;
-  font-style: italic;
-  font-family: 'PT Sans Narrow', sans-serif;
-}
-
-#tabla td {
-  border: 2px solid rgb(255, 255, 255);
-}
-
-/*Fieldset Consultas*/
-#FldConsultas {
-  background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
-  border: 2px solid rgba(8, 110, 42, 0.336);
-}
-
-/*Formulario para filtrar*/
-#Filtro {
-  margin-top: 10px;
-  font-size: 24px;
-}
-
 #Filtrado {
-  width: 60%;
   margin-top: 10px;
   font-size: 24px;
-  background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
-  border: 2px solid rgba(8, 110, 42, 0.336);
 }
 
 a:link {
@@ -257,36 +240,21 @@ a:hover {
   background: #fdcae1;
   padding: 5px;
   cursor: pointer;
-  margin-left: 0;
+  margin-left: 5%;
   font-size: 15px;
 }
 
 #total {
   display: none;
-  margin-left: 40%;
+  margin-left: 30%;
+  color: #fff;
 }
 
-#TablaConsultas {
+.cuerpo {
+  display: flex;
+  border-radius: 12px;
+}
+
+.cuerpoCatalogo {
   width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-  text-align: center;
 }
-
-#TablaConsultas th,
-#TablaConsultas td,
-#TablaConsultas tr {
-  padding: 15px;
-  background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
-}
-
-.tableFooter {
-  background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
-}
-
-/*fuentes
-font-family: 'Bona Nova', serif;
-font-family: 'PT Sans Narrow', sans-serif;
-font-family: 'Quintessential', cursive;
-font-family: 'Birthstone';
-font-family: 'Scheherazade New', serif;*/

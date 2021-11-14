@@ -28,8 +28,8 @@
     <!-- SECCION CONTENIDO -->
     <div class="contenedor">
         <?php include "../botones.inc" ?>
-        <div id="Filtro">
-            <fieldset id="FldConsultas">
+        <div class="Filtro">
+            <fieldset>
                 <legend>Filtro</legend>
                 <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
                     <table>
@@ -74,7 +74,7 @@
                     }
 
                     // determinar filtro
-                    echo "
+                    echo "<thead>
                 <tr>
                     <th>
                         <a href='./ProcesoFiltro.php?ORD=idGastos&DES=$descripcion'>ID</a>
@@ -89,6 +89,7 @@
                         <a href='./ProcesoFiltro.php?ORD=fechaGastos&DES=$descripcion'>Fecha</a>
                     </th>
                 </tr>
+                </thead>
                 ";
                     if (empty($descripcion)) {
                         include "../conexion.inc";
@@ -125,6 +126,7 @@
                     </div>
             </form>
         </div>
+    </div>
 </body>
 
 </html>

@@ -17,20 +17,19 @@
 <body>
     <!-- SECCION CONTENIDO -->
     <div class="contenedor">
-        <fieldset id="error">
+        <fieldset class="error">
             <legend>E R R O R</legend>
             <?php
             // capturar mensaje de error
             $mensaje = $_GET["MSG"];
-            echo "<h5>A T E N C I O N</h5>\n";
-            echo "<h5>$mensaje</h5>\n";
+            echo "<h5>A T E N C I O N </br> $mensaje</h5>\n";
             ?>
         </fieldset>
         <div id="BotonError">
             <button type="button" class="error" onclick="window.location.href='catalogo.php'">Volver al Inicio</button>
         </div>
         <?php
-        header("refresh:3 url=catalogo.php");
+        header("refresh: url=catalogo.php");
         ?>
     </div>
 </body>

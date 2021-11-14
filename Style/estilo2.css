@@ -1,0 +1,293 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+  }
+  
+  .contenedor {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  
+  /*Cuerpo Index*/
+  .cuerpo {
+    display: flex;
+    background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+    border-radius: 12px;
+  }
+  
+  .cuerpoCatalogo {
+    width: 100%;
+  }
+  
+  body {
+    background-repeat: repeat;
+    background-size: 100%;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-family: sans-serif;
+    font-weight: 100;
+    height: 100%;
+  }
+  
+  /*Logo Index*/
+  .logo {
+    margin-top: 2.5%;
+    margin-left: 5%;
+  }
+  
+  /*Texto Index*/
+  #textoLogo {
+    margin: 70px;
+  }
+  
+  #fldINDEX {
+    padding: 5px;
+  }
+  
+  legend {
+    font-family: 'Birthstone', cursive;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-family: 'Quintessential', cursive;
+  }
+  
+  h2 {
+    font-family: 'Bona Nova', serif;
+  }
+  
+  h3 {
+    font-family: 'PT Sans Narrow', sans-serif
+  }
+  
+  h4 {
+    font-family: 'Scheherazade New', serif;
+    text-align: justify;
+  }
+  
+  /*Para mensajes de error*/
+  h5 {
+    font-family: 'Bona Nova', serif;
+    font-size: 38px;
+    text-align: center;
+  }
+  
+  /*Botones de Menú Principal*/
+  .botones {
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+  }
+  
+  button {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 25px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+    cursor: pointer;
+  }
+  
+  #tablaFRM {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 2px;
+    width: 100%;
+  }
+  
+  /*Botones para Insertar, Eliminar y Modificar*/
+  .BotonesAcciones {
+    background: #fdcae1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-family: 'Scheherazade New', serif;
+  }
+  
+  .BotonVolver {
+    background: #fdcae1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-family: 'Scheherazade New', serif;
+    margin-top: 10px;
+  }
+  
+  /*Botones para Insertar, Eliminar y Modificar*/
+  #BotonesAcciones {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    margin-left: 25%;
+  }
+  
+  input {
+    border-radius: 10px;
+    font-size: 15px;
+    font-style: oblique;
+  }
+  
+  /*Botones de enviar y cancelar*/
+  #botonesformulario {
+    text-align: center;
+  }
+  
+  /*Botones de enviar y cancelar*/
+  .BotonesFormulario {
+    background: #fdcae1;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  #fldFRM {
+    background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+    width: 50%;
+    margin-left: 25%;
+    border: 2px solid rgba(8, 110, 42, 0.336);
+  }
+  
+  /*fieldset error*/
+  #error {
+    background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+    width: 50%;
+    height: 200px;
+    font-style: italic;
+    border: 2px solid rgba(8, 110, 42, 0.336);
+  }
+  
+  /*boton error*/
+  .error {
+    background: #fdcae1;
+    font-size: 22px;
+    font-style: italic;
+  }
+  
+  .filaPAR {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+  }
+  
+  .filaIMP {
+    font-family: 'Scheherazade New', serif;
+    font-size: 20px;
+  }
+  
+  /*Tabla Consultas*/
+  #tabla {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: left;
+    border: 2px solid rgb(255, 255, 255);
+  }
+  
+  #tabla th {
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+  
+  #tabla td {
+    border: 2px solid rgb(255, 255, 255);
+  }
+  
+  /*Fieldset Consultas*/
+  #FldConsultas {
+    background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+    border: 2px solid rgba(8, 110, 42, 0.336);
+  }
+  
+  /*Formulario para filtrar*/
+  #Filtro {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  
+  #Filtrado {
+    margin-top: 10px;
+    font-size: 24px;
+    background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+    border: 2px solid rgba(8, 110, 42, 0.336);
+  }
+  
+  a:link {
+    color: green;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  a:visited {
+    color: #7D02A1;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  a:hover {
+    color: orange;
+    text-decoration: underline;
+    padding: 5px;
+  }
+  
+  /*Mensaje de información para Consultas*/
+  .info {
+    background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
+    margin-top: 15px;
+    padding: 4px 12px;
+  }
+  
+  .botonTotal {
+    background: #fdcae1;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 5%;
+    font-size: 15px;
+  }
+  
+  #total {
+    display: none;
+    margin-left: 35%;
+  }
+  
+  #TablaConsultas {
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+    width: 800px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  
+  #TablaConsultas th,
+  #TablaConsultas td,
+  #TablaConsultas tr {
+    padding: 15px;
+    background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+  }
+  
+  .tableFooter {
+    background: linear-gradient(to bottom, rgb(0, 255, 191), rgba(46, 35, 75, 0.3));
+  }
