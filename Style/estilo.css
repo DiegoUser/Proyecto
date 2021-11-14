@@ -183,6 +183,9 @@ input {
   padding: 5px;
   cursor: pointer;
 }
+.botonesMenu{
+  background: #ff00734b;
+}
 
 .Filtro {
   display: flex;
