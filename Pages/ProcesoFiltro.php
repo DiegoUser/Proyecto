@@ -110,22 +110,13 @@
                     <?php
                             $total = 0;
                             mysqli_close($conex);
-                            header("refresh: url=consultas.php");
+                            header("refresh:4 url=consultas.php");
                         } else {
                             include_once "ConsultaTabla.php";
+                            include_once "../div.inc";
                         }
                     }
                     ?>
-                    <div class="tableFooter">
-                        <button class="botonTotal" type="button" onclick="SetBox('total')"><strong>Mostrar Total</strong></button>
-                        <div id="total">
-                            <?php
-                            if ($total !== 0) {
-                                echo $total;
-                            }
-                            ?>
-                        </div>
-                    </div>
             </form>
         </div>
     </div>
