@@ -114,6 +114,8 @@
                         }
                     }
                     ?>
+                </table>
+            </form>
         </div>
 </body>
 
