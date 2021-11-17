@@ -25,6 +25,7 @@
 </head>
 
 <body>
+    <?php include "session.php" ?>
     <div class="contenedor">
         <?php include "../botones.inc" ?>
         <div class="Filtro">
