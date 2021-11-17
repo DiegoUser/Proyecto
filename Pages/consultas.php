@@ -1,3 +1,4 @@
+<?php include "session.php" ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -25,7 +26,7 @@
 </head>
 
 <body>
-    <?php include "session.php" ?>
+
     <div class="contenedor">
         <?php include "../botones.inc" ?>
         <div class="Filtro">
