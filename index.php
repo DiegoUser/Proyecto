@@ -1,3 +1,4 @@
+<?php include "./pages/session.php" ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -35,7 +36,6 @@
                     </h2>
                 </fieldset>
             </div>
-            <?php include "./pages/login.php" ?>
         </div>
     </div>
 </body>
