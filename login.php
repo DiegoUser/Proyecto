@@ -96,7 +96,7 @@ if (isset($_POST['login'])) {
 							¿No tienes cuenta?
 						</span>
 
-						<a class="txt2" href="#">
+						<a class="txt2" href="register.php">
 							Regístrate
 						</a>
 					</div>
