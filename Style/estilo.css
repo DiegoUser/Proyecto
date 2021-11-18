@@ -265,3 +265,7 @@ a:hover {
 .cuerpoCatalogo {
   width: 100%;
 }
+.logOut{
+  background: #ff00734b;
+  margin-left: 50%;
+}
