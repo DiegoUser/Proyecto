@@ -218,7 +218,7 @@ input {
 }
 
 a:link {
-  color: green;
+  color: 7D02A1;
   text-decoration: none;
   padding: 5px;
 }
@@ -230,7 +230,7 @@ a:visited {
 }
 
 a:hover {
-  color: orange;
+  color: #7D02A1;
   text-decoration: underline;
   padding: 5px;
 }

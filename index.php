@@ -1,4 +1,4 @@
-<?php include "./pages/session.php" ?>
+<?php include "session.php" ?>
 <!DOCTYPE html>
 <html lang="es">
 
