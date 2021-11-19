@@ -54,7 +54,7 @@
             </fieldset>
         </div>
         <div class="info">
-            <p><strong>Info!</strong> Si desea visualizar todos los registros, deje el filtro vacío</p>
+            <span><strong>Info!</strong> Si desea visualizar todos los registros, deje el filtro vacío</span>
         </div>
         </div>
     </div>

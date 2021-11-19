@@ -175,7 +175,6 @@ input {
 
 .Filtro {
   display: flex;
-  width: 50%;
 }
 
 .errorField {
@@ -229,6 +228,8 @@ a:hover {
   border-left: 6px solid #2196F3;
   margin-top: 15px;
   padding: 4px 12px;
+  width: 50%;
+  margin-left: 25%;
 }
 
 .botonTotal {
