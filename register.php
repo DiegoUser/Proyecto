@@ -38,7 +38,7 @@ if (isset($_POST['register'])) {
 <html lang="es">
 
 <head>
-    <title>Login V2</title>
+    <title>Gestión de Datos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=PT+Sans+Narrow&family=Quintessential&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../Script/script.js"></script>
-    <title>Electro.Web</title>
+    <title>Gestión de Datos</title>
 </head>
 
 <body>
