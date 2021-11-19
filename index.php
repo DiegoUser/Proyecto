@@ -10,34 +10,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=PT+Sans+Narrow&family=Quintessential&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=PT+Sans+Narrow&family=Quintessential&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <script type="text/javascript" src="./Script/script.js"></script>
     <title>Gestión de Gastos</title>
 </head>
 
 <body>
     <div class="contenedor">
-        <div class="botones">
-            <button type="button" class="botonesMenu" onclick="window.location.href='./index.php'">Inicio</button>
-            <button type="button" class="botonesMenu" onclick="window.location.href='./Pages/catalogo.php'">Catálogo</button>
-            <button type="button" class="botonesMenu" onclick="window.location.href='./Pages/consultas.php'">Consultas</button>
-            <button type="button" class="logOut"      onclick="window.location.href='../logout.php'">Log Out</button>
-        </div>
-        <div class="cuerpo">
-            <div class="logo">
-                <img src="./Resources/logo.png" width="300" height="300">
+    <div class="contenedor">
+        <div class="main_box">
+            <input type="checkbox" id="check">
+            <div class="btn_one">
+                <label for="check">
+                    <i class="fas fa-bars"></i>
+                </label>
             </div>
-            <div id="textoLogo">
-                <fieldset id="fldINDEX">
-                    <legend>Gestión</legend>
-                    <h2>Este servicio está pensado para llevar una gestión de los ingresos, egresos y ahorros.
-                    </h2>
-                </fieldset>
+            <div class="sidebar_menu">
+                <div class="logo">
+                    <a href="#">Gestión</a>
+                </div>
+                <div class="btn_two">
+                    <label for="check">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><i class="fas fa-qrcode"></i>
+                            <a href="./index.php">Inicio</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-link"></i>
+                            <a href="./pages/catalogo.php">Catálogo</a>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-stream"></i>
+                                    <a href="./pages/catalogo.php">Insertar</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-calendar-week"></i>
+                                    <a href="./pages/FormDEL.php">Eliminar</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-question-circle"></i>
+                                    <a href="./pages/FormMOD.php">Modificar</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <i class="fas fa-sliders-h"></i>
+                            <a href="./pages/consultas.php">Consultas</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-volume"></i>
+                            <a href="./logout.php">LogOut</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cuerpo">
+                <div class="logo">
+                    <img src="./Resources/logo.png" width="300" height="300">
+                </div>
+                <div id="textoLogo">
+                    <fieldset id="fldINDEX">
+                        <legend>Gestión</legend>
+                        <h2>Este servicio está pensado para llevar una gestión de los ingresos, egresos y ahorros.
+                        </h2>
+                    </fieldset>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>

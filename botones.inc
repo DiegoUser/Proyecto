@@ -1,6 +1,25 @@
-<div class="botones">
-    <button type="button" class="botonesMenu" onclick="window.location.href='../index.php'">Inicio</button>
-    <button type="button" class="botonesMenu" onclick="window.location.href='../Pages/catalogo.php'">Catálogo</button>
-    <button type="button" class="botonesMenu" onclick="window.location.href='../Pages/consultas.php'">Consultas</button>
-    <button type="button" class="logOut"      onclick="window.location.href='../logout.php'">Log Out</button>
+<div id="header">
+  <nav>
+    <ul class="nav">
+      <li><a href="../index.php">Inicio</a></li>
+      <li>
+        <a href="./catalogo.php">Catálogo</a>
+        <ul>
+          <li><a href="./catalogo.php">Insertar</a></li>
+          <li><a href="./FormDEL.php">Eliminar</a></li>
+          <li><a href="./FormMOD.php">Modificar</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="./consultas.php">Consultas</a>
+        <ul>
+          <li><a href="">Ingresos</a></li>
+          <li><a href="./pages/consultas.php">Egresos</a></li>
+          <li><a href="">Ahorro</a></li>
+          <li><a href="">Totales</a></li>
+        </ul>
+      </li>
+      <li><a href="../logout.php">Log Out</a></li>
+    </ul>
+  </nav>
 </div>

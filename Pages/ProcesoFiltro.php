@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=PT+Sans+Narrow&family=Quintessential&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../Script/script.js"></script>
     <script type="text/javascript">
@@ -27,7 +28,7 @@
 <body>
     <!-- SECCION CONTENIDO -->
     <div class="contenedor">
-        <?php include "../botones.inc" ?>
+        <?php include "../navsidebar.inc" ?>
         <div class="Filtro">
             <fieldset>
                 <legend>Filtro</legend>
@@ -119,6 +120,7 @@
                     ?>
             </form>
         </div>
+    </div>
     </div>
 </body>
 

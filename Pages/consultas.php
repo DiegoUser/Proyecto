@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=PT+Sans+Narrow&family=Quintessential&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../Script/script.js"></script>
     <script type="text/javascript">
@@ -26,29 +27,27 @@
 </head>
 
 <body>
-
-    <div class="contenedor">
-        <?php include "../botones.inc" ?>
+    <?php include "../navsidebar.inc" ?>
         <div class="Filtro">
             <fieldset>
                 <legend>Filtro</legend>
                 <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
                     <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4>Descripcion:</h4>
-                            </td>
-                            <td>
-                                <input id="dataDES" type="name" name="DES" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="botonesformulario" colspan="2">
-                                <input type="button" class="BotonesFormulario" value="Buscar" onclick="Filtro();" />
-                                <input type="reset" class="BotonesFormulario" value="Cancelar" />
-                            </td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4>Descripcion:</h4>
+                                </td>
+                                <td>
+                                    <input id="dataDES" type="name" name="DES" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="botonesformulario" colspan="2">
+                                    <input type="button" class="BotonesFormulario" value="Buscar" onclick="Filtro();" />
+                                    <input type="reset" class="BotonesFormulario" value="Cancelar" />
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </form>
@@ -56,6 +55,7 @@
         </div>
         <div class="info">
             <p><strong>Info!</strong> Si desea visualizar todos los registros, deje el filtro vacío</p>
+        </div>
         </div>
     </div>
 </body>
