@@ -28,35 +28,35 @@
 
 <body>
     <?php include "../navsidebar.inc" ?>
-        <div class="Filtro">
-            <fieldset>
-                <legend>Filtro</legend>
-                <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4>Descripcion:</h4>
-                                </td>
-                                <td>
-                                    <input id="dataDES" type="name" name="DES" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td id="botonesformulario" colspan="2">
-                                    <input type="button" class="BotonesFormulario" value="Buscar" onclick="Filtro();" />
-                                    <input type="reset" class="BotonesFormulario" value="Cancelar" />
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </form>
-            </fieldset>
-        </div>
-        <div class="info">
-            <span><strong>Info!</strong> Si desea visualizar todos los registros, deje el filtro vacío</span>
-        </div>
-        </div>
+    <div class="Filtro">
+        <fieldset>
+            <legend>Filtro</legend>
+            <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4>Descripcion:</h4>
+                            </td>
+                            <td>
+                                <input id="dataDES" type="name" name="DES" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="botonesformulario" colspan="2">
+                                <input type="button" class="bn632-hover bn19" value="Buscar" onclick="Filtro();" />
+                                <input type="button" class="bn632-hover bn19" value="Cancelar" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </fieldset>
+    </div>
+    <div class="info">
+        <span><strong>Info!</strong> Si desea visualizar todos los registros, deje el filtro vacío</span>
+    </div>
+    </div>
     </div>
 </body>
 

@@ -41,7 +41,7 @@ mysqli_close($conex);
 
 <body>
     <?php include "../navsidebar.inc" ?>
-    <div id="contenido">
+    <div class="cuerpoCatalogo">
         <fieldset id="fldFRM">
             <legend>Eliminar</legend>
             <form id="dataFRM" action="ProcesoDEL.php" method="POST">
@@ -89,16 +89,16 @@ mysqli_close($conex);
                     <!--BOTONES DEL FORMULARIO-->
                     <tr>
                         <td id="botonesformulario" colspan="2">
-                            <input type="button" class="BotonesFormulario" value="Eliminar" onclick="CheckForm('Eliminar');" />
-                            <input type="reset" class="BotonesFormulario" name="Cancelar" onclick="SetPage('FormDEL.php')" ; />
+                            <input type="button" class="bn632-hover bn19" value="Eliminar" onclick="CheckForm('Eliminar');" />
+                            <input type="button" class="bn632-hover bn19" value="Cancelar"onclick="SetPage('FormDEL.php');" />
                         </td>
                     </tr>
                 </table>
             </form>
         </fieldset>
     </div>
-</div>
-</div>
+    </div>
+    </div>
 </body>
 
 </html>

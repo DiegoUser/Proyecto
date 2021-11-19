@@ -26,7 +26,7 @@
             ?>
         </fieldset>
         <div id="BotonError">
-            <button type="button" class="error" onclick="window.location.href='catalogo.php'">Volver al Inicio</button>
+            <input type="button" class="bn632-hover bn19" value="Volver al Inicio" onclick="window.location.href='catalogo.php'"/>
         </div>
         <?php
         header("refresh:3 url=catalogo.php");

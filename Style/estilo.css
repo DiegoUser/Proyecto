@@ -112,27 +112,6 @@ h5 {
   text-align: center;
 }
 
-/*Botones de Menú Principal*/
-.botones {
-  width: 100%;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  text-align: center;
-}
-
-button {
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 25px;
-  border-radius: 15px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 20px;
-  padding: 5px;
-  cursor: pointer;
-}
-
 #tablaFRM {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 20px;
@@ -394,4 +373,41 @@ a:hover {
 
 #check:checked~.sidebar_menu .btn_two i {
   opacity: 1;
+}
+.bn632-hover {
+  width: 120px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 30px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn19 {
+    background-image: linear-gradient(
+      to right,
+      #f5ce62,
+      #e43603,
+      #fa7199,
+      #e85a19
+    );
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
 }

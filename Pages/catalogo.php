@@ -50,8 +50,8 @@
                         </tr>
                         <tr>
                             <td id="botonesformulario" colspan="2">
-                                <input type="button" class="BotonesFormulario" value="Confirmar" onclick="CheckForm('Insertar');" />
-                                <input type="reset" class="BotonesFormulario" value="Cancelar" />
+                                <input type="button" class="bn632-hover bn19" value="Confirmar" onclick="CheckForm('Insertar');"/>
+                                <input type="button" class="bn632-hover bn19" value="Cancelar" />
                             </td>
                         </tr>
                     </table>
