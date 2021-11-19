@@ -1,5 +1,5 @@
 <div class="tableFooter">
-                        <button class="botonTotal" type="button" onclick="SetBox('total')"><strong>Mostrar Total</strong></button>
+<input type="button" class="bn632-hover bn19" value="Mostrar Total" onclick="SetBox('total')" />
                         <div id="total">
                             <?php
                             if ($total !== 0) {

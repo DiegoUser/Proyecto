@@ -44,8 +44,8 @@
                         </tr>
                         <tr>
                             <td id="botonesformulario" colspan="2">
-                                <input type="button" class="BotonesFormulario" value="Buscar" onclick="Filtro();" />
-                                <input type="reset" class="BotonesFormulario" value="Cancelar" />
+                                <input type="button" class="bn632-hover bn19" value="Confirmar" onclick="Filtro();" />
+                                <input type="button" class="bn632-hover bn19" value="Cancelar" />
                             </td>
                         </tr>
                     </table>
@@ -111,7 +111,6 @@
                     <?php
                             $total = 0;
                             mysqli_close($conex);
-                            header("refresh:4 url=consultas.php");
                         } else {
                             include_once "ConsultaTabla.php";
                             include_once "../div.inc";
