@@ -19,7 +19,6 @@
 
 <body>
     <div class="contenedor">
-    <div class="contenedor">
         <div class="main_box">
             <input type="checkbox" id="check">
             <div class="btn_one">
@@ -42,29 +41,29 @@
                             <a href="./index.php">Inicio</a>
                         </li>
                         <li>
-                            <i class="fas fa-link"></i>
+                            <i class="far fa-newspaper"></i>
                             <a href="./pages/catalogo.php">Catálogo</a>
                             <ul>
                                 <li>
-                                    <i class="fas fa-stream"></i>
+                                    <i class="fas fa-plus"></i>
                                     <a href="./pages/catalogo.php">Insertar</a>
                                 </li>
                                 <li>
-                                    <i class="fas fa-calendar-week"></i>
+                                    <i class="fas fa-minus"></i>
                                     <a href="./pages/FormDEL.php">Eliminar</a>
                                 </li>
                                 <li>
-                                    <i class="fas fa-question-circle"></i>
+                                    <i class="fas fa-exchange-alt"></i>
                                     <a href="./pages/FormMOD.php">Modificar</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <i class="fas fa-sliders-h"></i>
+                            <i class="far fa-question-circle"></i>
                             <a href="./pages/consultas.php">Consultas</a>
                         </li>
                         <li>
-                            <i class="fas fa-phone-volume"></i>
+                            <i class="fas fa-sign-out-alt"></i>
                             <a href="./logout.php">LogOut</a>
                         </li>
                     </ul>
@@ -72,7 +71,7 @@
             </div>
             <div class="cuerpo">
                 <div class="logo">
-                    <img src="./Resources/logo.png" width="300" height="300">
+                    <img src="./Resources/logo.jpg" width="400" height="">
                 </div>
                 <div id="textoLogo">
                     <fieldset id="fldINDEX">
