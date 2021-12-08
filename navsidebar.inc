@@ -21,29 +21,29 @@
                             <a href="../index.php">Inicio</a>
                         </li>
                         <li>
-                            <i class="fas fa-link"></i>
+                            <i class="far fa-newspaper"></i>
                             <a href="./catalogo.php">Catálogo</a>
                             <ul>
                                 <li>
-                                    <i class="fas fa-stream"></i>
+                                    <i class="fas fa-plus"></i>
                                     <a href="./catalogo.php">Insertar</a>
                                 </li>
                                 <li>
-                                    <i class="fas fa-calendar-week"></i>
+                                    <i class="fas fa-minus"></i>
                                     <a href="./FormDEL.php">Eliminar</a>
                                 </li>
                                 <li>
-                                    <i class="fas fa-question-circle"></i>
+                                    <i class="fas fa-exchange-alt"></i>
                                     <a href="./FormMOD.php">Modificar</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <i class="fas fa-sliders-h"></i>
+                            <i class="far fa-question-circle"></i>
                             <a href="./consultas.php">Consultas</a>
                         </li>
                         <li>
-                            <i class="fas fa-phone-volume"></i>
+                            <i class="fas fa-sign-out-alt"></i>
                             <a href="../logout.php">LogOut</a>
                         </li>
                     </ul>
