@@ -28,7 +28,7 @@
             </div>
             <div class="sidebar_menu">
                 <div class="logo">
-                    <a href="#">Gestión</a>
+                    <a href="./index.php">Gestión</a>
                 </div>
                 <div class="btn_two">
                     <label for="check">
@@ -42,15 +42,15 @@
                         </li>
                         <li>
                             <i class="far fa-newspaper"></i>
-                            <a href="./pages/catalogo.php">Catálogo</a>
+                            <a href="./pages/catalogo.php">Data</a>
                             <ul>
                                 <li>
                                     <i class="fas fa-plus"></i>
-                                    <a href="./pages/catalogo.php">Insertar</a>
+                                    <a href="./pages/catalogo.php">Añadir</a>
                                 </li>
                                 <li>
                                     <i class="fas fa-minus"></i>
-                                    <a href="./pages/FormDEL.php">Eliminar</a>
+                                    <a href="./pages/FormDEL.php">Quitar</a>
                                 </li>
                                 <li>
                                     <i class="fas fa-exchange-alt"></i>
@@ -61,10 +61,58 @@
                         <li>
                             <i class="far fa-question-circle"></i>
                             <a href="./pages/consultas.php">Consultas</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-sign-out-alt"></i>
-                            <a href="./logout.php">LogOut</a>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-plus"></i>
+                                    <a href="./pages/consultas.php">Egresos</a>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-plus"></i>
+                                            <a href="./pages/consultas.php">E. Pasados</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-minus"></i>
+                                            <a href="./pages/FormDEL.php">E. Futuros</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fas fa-plus"></i>
+                                    <a href="./pages/consultas.php">Ingresos</a>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-plus"></i>
+                                            <a href="./pages/consultas.php">I. Pasados</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-minus"></i>
+                                            <a href="./pages/FormDEL.php">I. Futuros</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fas fa-plus"></i>
+                                    <a href="./pages/consultas.php">Otros Activos</a>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-plus"></i>
+                                            <a href="./pages/consultas.php">Ahorros</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-minus"></i>
+                                            <a href="./pages/FormDEL.php">Inversiones</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-minus"></i>
+                                            <a href="./pages/FormDEL.php">Planes</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <a href="./logout.php">LogOut</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>

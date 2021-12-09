@@ -21,7 +21,7 @@
         <?php include "../navsidebar.inc" ?>
         <div class="cuerpoCatalogo">
             <fieldset id="fldFRM">
-                <legend>Insertar</legend>
+                <legend>Añadir</legend>
                 <form id="dataFRM" action="ProcesoINS.php" method="POST">
                     <table id="tablaFRM">
                         <tr>

@@ -22,7 +22,7 @@
         <div class="cuerpoCatalogo">
             <div id="contenido">
                 <fieldset id="fldFRM">
-                    <legend>Eliminar</legend>
+                    <legend>Quitar</legend>
                     <form id="dataFRM" action="ProcesoConfirmDEL.php" method="POST">
                         <table id="tablaFRM">
                             <tr>

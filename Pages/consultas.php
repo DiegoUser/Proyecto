@@ -30,7 +30,7 @@
     <?php include "../navsidebar.inc" ?>
     <div class="Filtro">
         <fieldset>
-            <legend>Filtro</legend>
+            <legend>Egresos Pasados</legend>
             <form id="dataFRM" action="ProcesoFiltro.php" method="POST">
                 <table>
                     <tbody>

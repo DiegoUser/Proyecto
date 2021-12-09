@@ -26,11 +26,11 @@
                             <ul>
                                 <li>
                                     <i class="fas fa-plus"></i>
-                                    <a href="./catalogo.php">Insertar</a>
+                                    <a href="./catalogo.php">Añadir</a>
                                 </li>
                                 <li>
                                     <i class="fas fa-minus"></i>
-                                    <a href="./FormDEL.php">Eliminar</a>
+                                    <a href="./FormDEL.php">Quitar</a>
                                 </li>
                                 <li>
                                     <i class="fas fa-exchange-alt"></i>
@@ -41,11 +41,22 @@
                         <li>
                             <i class="far fa-question-circle"></i>
                             <a href="./consultas.php">Consultas</a>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-plus"></i>
+                                    <a href="./consultas.php">Egresos Pasados</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-minus"></i>
+                                    <a href="./consultas.php">Egresos Futuros</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <i class="fas fa-sign-out-alt"></i>
                             <a href="../logout.php">LogOut</a>
                         </li>
                     </ul>
+                    </li>
                 </div>
             </div>
