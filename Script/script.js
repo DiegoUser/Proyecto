@@ -112,9 +112,9 @@ function Filtro() {
 
 function SetBox(idBox) {
   var estado = document.getElementById(idBox).style.display;
-  if (estado == "inline-table") {
+  if (estado == "block") {
     document.getElementById(idBox).style.display = "none";
   } else {
-    document.getElementById(idBox).style.display = "inline-table";
+    document.getElementById(idBox).style.display = "block";
   }
 }

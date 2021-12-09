@@ -37,48 +37,56 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><i class="fas fa-qrcode"></i>
+                        <li>
+                            <i class="fas fa-qrcode"></i>
                             <a href="./index.php">Inicio</a>
                         </li>
-                        <li>
-                            <i class="far fa-newspaper"></i>
-                            <a href="./pages/catalogo.php">Data</a>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-plus"></i>
-                                    <a href="./pages/catalogo.php">Añadir</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-minus"></i>
-                                    <a href="./pages/FormDEL.php">Quitar</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-exchange-alt"></i>
-                                    <a href="./pages/FormMOD.php">Modificar</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
+                        <!-- Data -->
+                        <div onclick="SetBox('Data')">
+                            <li>
+                                <i class="far fa-newspaper"></i>
+                                <a href="#">Data</a>
+                                <ul id="Data">
+                                    <li>
+                                        <i class="fas fa-plus"></i>
+                                        <a href="./pages/catalogo.php">Añadir</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-minus"></i>
+                                        <a href="./pages/FormDEL.php">Quitar</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-exchange-alt"></i>
+                                        <a href="./pages/FormMOD.php">Modificar</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                        <!-- Fin de Data -->
+                        <!-- Consultas -->
+                        <div onclick="SetBox('Consultas')">
                             <i class="far fa-question-circle"></i>
-                            <a href="./pages/consultas.php">Consultas</a>
-                            <ul>
+                            <a href="#">Consultas</a>
+                            <ul id="Consultas">
+                                <div onclick="SetBox('Egresos')">
+                                    <li>
+                                        <i class="fas fa-plus"></i>
+                                        <a href="#">Egresos</a>
+                                        <ul id="Egresos">
+                                            <li>
+                                                <i class="fas fa-plus"></i>
+                                                <a href="./pages/consultas.php">E. Pasados</a>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-minus"></i>
+                                                <a href="./pages/FormDEL.php">E. Futuros</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </div>
                                 <li>
                                     <i class="fas fa-plus"></i>
-                                    <a href="./pages/consultas.php">Egresos</a>
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-plus"></i>
-                                            <a href="./pages/consultas.php">E. Pasados</a>
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-minus"></i>
-                                            <a href="./pages/FormDEL.php">E. Futuros</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <i class="fas fa-plus"></i>
-                                    <a href="./pages/consultas.php">Ingresos</a>
+                                    <a href="#">Ingresos</a>
                                     <ul>
                                         <li>
                                             <i class="fas fa-plus"></i>
@@ -92,7 +100,7 @@
                                 </li>
                                 <li>
                                     <i class="fas fa-plus"></i>
-                                    <a href="./pages/consultas.php">Otros Activos</a>
+                                    <a href="#">Otros Activos</a>
                                     <ul>
                                         <li>
                                             <i class="fas fa-plus"></i>
@@ -108,12 +116,15 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <i class="fas fa-sign-out-alt"></i>
-                                    <a href="./logout.php">LogOut</a>
-                                </li>
                             </ul>
+                        </div>
+                        <!-- Fin de Consultas -->
+                        <li>
+                            <i class="fas fa-sign-out-alt"></i>
+                            <a href="./logout.php">LogOut</a>
                         </li>
+                    </ul>
+                    </li>
                     </ul>
                 </div>
             </div>
