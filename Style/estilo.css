@@ -412,4 +412,10 @@ a:hover {
 #Egresos{
   display: none;
 }
+#Ingresos{
+  display: none;
+}
+#OtrosActivos{
+  display: none;
+}
 

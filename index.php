@@ -65,66 +65,70 @@
                         <!-- Fin de Data -->
                         <!-- Consultas -->
                         <div onclick="SetBox('Consultas')">
-                            <i class="far fa-question-circle"></i>
-                            <a href="#">Consultas</a>
-                            <ul id="Consultas">
-                                <div onclick="SetBox('Egresos')">
-                                    <li>
-                                        <i class="fas fa-plus"></i>
-                                        <a href="#">Egresos</a>
-                                        <ul id="Egresos">
-                                            <li>
-                                                <i class="fas fa-plus"></i>
-                                                <a href="./pages/consultas.php">E. Pasados</a>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-minus"></i>
-                                                <a href="./pages/FormDEL.php">E. Futuros</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </div>
-                                <li>
-                                    <i class="fas fa-plus"></i>
-                                    <a href="#">Ingresos</a>
-                                    <ul>
+                            <li>
+                                <i class="far fa-question-circle"></i>
+                                <a href="#">Consultas</a>
+                                <ul id="Consultas">
+                                    <div onmouseover="SetBox('Egresos')" onmouseout="SetBox('Egresos')">
                                         <li>
                                             <i class="fas fa-plus"></i>
-                                            <a href="./pages/consultas.php">I. Pasados</a>
+                                            <a href="#">Egresos</a>
+                                            <ul id="Egresos">
+                                                <li>
+                                                    <i class="fas fa-plus"></i>
+                                                    <a href="./pages/consultas.php">E. Pasados</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-minus"></i>
+                                                    <a href="./pages/FormDEL.php">E. Futuros</a>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li>
-                                            <i class="fas fa-minus"></i>
-                                            <a href="./pages/FormDEL.php">I. Futuros</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <i class="fas fa-plus"></i>
-                                    <a href="#">Otros Activos</a>
-                                    <ul>
+                                    </div>
+                                    <div onmouseover="SetBox('Ingresos')" onmouseout="SetBox('Ingresos')">
                                         <li>
                                             <i class="fas fa-plus"></i>
-                                            <a href="./pages/consultas.php">Ahorros</a>
+                                            <a href="#">Ingresos</a>
+                                            <ul id="Ingresos">
+                                                <li>
+                                                    <i class="fas fa-plus"></i>
+                                                    <a href="./pages/consultas.php">I. Pasados</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-minus"></i>
+                                                    <a href="./pages/FormDEL.php">I. Futuros</a>
+                                                </li>
+                                            </ul>
                                         </li>
+                                    </div>
+                                    <div onmouseover="SetBox('OtrosActivos')" onmouseout="SetBox('OtrosActivos')">
                                         <li>
-                                            <i class="fas fa-minus"></i>
-                                            <a href="./pages/FormDEL.php">Inversiones</a>
+                                            <i class="fas fa-plus"></i>
+                                            <a href="#">Otros Activos</a>
+                                            <ul id="OtrosActivos">
+                                                <li>
+                                                    <i class="fas fa-plus"></i>
+                                                    <a href="./pages/consultas.php">Ahorros</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-minus"></i>
+                                                    <a href="./pages/FormDEL.php">Inversiones</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-minus"></i>
+                                                    <a href="./pages/FormDEL.php">Planes</a>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li>
-                                            <i class="fas fa-minus"></i>
-                                            <a href="./pages/FormDEL.php">Planes</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                                    </div>
+                                </ul>
+                            </li>
                         </div>
                         <!-- Fin de Consultas -->
                         <li>
                             <i class="fas fa-sign-out-alt"></i>
                             <a href="./logout.php">LogOut</a>
                         </li>
-                    </ul>
-                    </li>
                     </ul>
                 </div>
             </div>
