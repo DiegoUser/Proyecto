@@ -237,13 +237,13 @@ a:hover {
   position: relative;
   background: url('side.jpeg') right no-repeat;
   background-size: cover;
-  height: 120vh;
+  height: 100vh;
   width: 100%;
 }
 
 .main_box .sidebar_menu {
   position: fixed;
-  height: 120vh;
+  height: 100vh;
   width: 280px;
   left: -280px;
   background: rgba(255, 255, 255, 0.1);
@@ -252,7 +252,7 @@ a:hover {
   transition: all 0.3s linear;
 }
 
-.sidebar_menu {
+.sidebar_menu .logo {
   position: absolute;
   width: 100%;
   height: 60px;
