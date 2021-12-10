@@ -406,16 +406,9 @@ a:hover {
 #Data{
   display: none;
 }
-#Consultas{
+#Ingresos{
   display: none;
 }
 #Egresos{
   display: none;
 }
-#Ingresos{
-  display: none;
-}
-#OtrosActivos{
-  display: none;
-}
-

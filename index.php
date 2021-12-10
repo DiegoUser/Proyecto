@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=PT+Sans+Narrow&family=Quintessential&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/a1775e8a18.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./Script/script.js"></script>
     <title>Gestión de Gastos</title>
 </head>
@@ -63,28 +63,46 @@
                             </li>
                         </div>
                         <!-- Fin de Data -->
-                        <!-- Consultas -->
-                        <div onclick="SetBox('Consultas')">
+                        <div onclick="SetBox('Ingresos')">
                             <li>
-                                <i class="far fa-question-circle"></i>
-                                <a href="#">Consultas</a>
-                                <ul id="Consultas">
+                                <i class="fas fa-user-plus"></i>
+                                <a href="#">Ingresos</a>
+                                <ul id="Ingresos">
                                     <li>
-                                        <i class="fas fa-plus"></i>
-                                        <a href="./Pages/consultas.php">Egresos</a>
+                                        <i class="fas fa-wallet"></i>
+                                        <a href="#">Ingresos Fijos</a>
                                     </li>
                                     <li>
-                                        <i class="fas fa-plus"></i>
-                                        <a href="#">Ingresos</a>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-plus"></i>
-                                        <a href="#">Otros Activos</a>
+                                        <i class="fas fa-chart-line"></i>
+                                        <a href="#">Inversiones</a>
                                     </li>
                                 </ul>
                             </li>
                         </div>
-                        <!-- Fin de Consultas -->
+                        <div onclick="SetBox('Egresos')">
+                            <li>
+                                <i class="fas fa-user-minus"></i>
+                                <a href="#">Egresos</a>
+                                <ul id="Egresos">
+                                    <li>
+                                        <i class="fas fa-wallet"></i>
+                                        <a href="./Pages/consultas.php">Egresos Pasados</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-chart-line"></i>
+                                        <a href="#">Egresos Futuros</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                        <li>
+                            <i class="fas fa-piggy-bank"></i>
+                            <a href="#">Ahorros</a>
+                        </li>
+                        <li>
+                            <i class="far fa-comments"></i>
+                            <a href="#">Planes</a>
+                        </li>
                         <li>
                             <i class="fas fa-sign-out-alt"></i>
                             <a href="./logout.php">LogOut</a>
