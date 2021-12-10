@@ -85,11 +85,11 @@
                                 <a href="#">Egresos</a>
                                 <ul id="Egresos">
                                     <li>
-                                        <i class="fas fa-wallet"></i>
+                                        <i class="fas fa-file-invoice-dollar"></i>
                                         <a href="./Pages/consultas.php">Egresos Pasados</a>
                                     </li>
                                     <li>
-                                        <i class="fas fa-chart-line"></i>
+                                        <i class="far fa-calendar-alt"></i>
                                         <a href="#">Egresos Futuros</a>
                                     </li>
                                 </ul>
