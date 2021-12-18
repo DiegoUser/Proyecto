@@ -44,11 +44,10 @@
                                         <option value="2">Inversion</option>
                                     </optgroup>
                                     <optgroup label="Egreso">
-                                        <option value="10">Egreso Pasado</option>
-                                        <option value="11">Egreso Futuro</option>
+                                        <option value="3">Egreso</option>
                                     </optgroup>
                                     <optgroup label="Ahorro">
-                                        <option value="10">Ahorro</option>
+                                        <option value="4">Ahorro</option>
                                     </optgroup>
                                 </select>
                             </td>
